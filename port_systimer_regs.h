@@ -28,7 +28,11 @@
 #define SYSTIMER_UNIT0_OP_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0004))
 #define SYSTIMER_COMP0_LOAD_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0050))
 #define SYSTIMER_INT_ENA_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0064))
-#define SYSTIMER_INT_CLR_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x006C))
+
+#ifdef __ASSEMBLER__
+    #define SYSTIMER_INT_CLR_REG (SYSTIMER_BASE_ADDRESS + 0x006C) //#define for the .macro CLEAR_SYSTIMER_INTERRUPT in port_asm.S
+#else
+    #define SYSTIMER_INT_CLR_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x006C))
 
 /*==========================================
           Interrupt Matrix Registers
