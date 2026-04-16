@@ -1,8 +1,8 @@
-#include "FreeRTOS.h"
-#include "task.h"
 #include <stdint.h>
+#include "port_systimer.h"
+#include "port_systimer_regs.h"
 
-void vPortSetupTimerInterrupt( void )
+void portSetupSystimerInterrupt( void )
 { 
     //=== SYSTIMER PERIODIC TIMER SETUP ===
 

@@ -34,7 +34,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "portmacro.h"
-
+#include "port_systimer.h"
 /* Standard includes. */
 #include "string.h"
 
@@ -82,7 +82,7 @@ const StackType_t xISRStackTop = ( StackType_t ) &( xISRStack[ configISR_STACK_S
  * file is weak to allow application writers to change the timer used to
  * generate the tick interrupt.
  */
-void vPortSetupTimerInterrupt( void ) __attribute__( ( weak ) );
+// void vPortSetupTimerInterrupt( void ) __attribute__( ( weak ) );
 
 /*-----------------------------------------------------------*/
 
@@ -141,7 +141,8 @@ BaseType_t xPortStartScheduler( void )
     /* If there is a CLINT then it is ok to use the default implementation
      * in this file, otherwise vPortSetupTimerInterrupt() must be implemented to
      * configure whichever clock is to be used to generate the tick interrupt. */
-    vPortSetupTimerInterrupt();
+   // vPortSetupTimerInterrupt();
+    portSetupSystimerInterrupt();
 
     xPortStartFirstTask();
 
