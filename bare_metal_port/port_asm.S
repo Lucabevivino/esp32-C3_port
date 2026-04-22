@@ -99,7 +99,7 @@ definitions. */
 /*-----------------------------------------------------------*/
  .macro CLEAR_SYSTIMER_INTERRUPT
     li t0, SYSTIMER_INT_CLR_REG
-    addi t1, 1
+    addi t1, t1, 1
     sw t1, 0(t0)
     .endm
 /*-----------------------------------------------------------*/

@@ -1,7 +1,11 @@
 #ifndef REGS_SYSTIMER_H
 #define REGS_SYSTIMER_H
+#endif
 
+#ifndef __ASSEMBLER__
 #include <stdint.h>
+#include <FreeRTOS.h>
+#endif
 
 /*==========================================
              Base Addresses 
@@ -10,6 +14,8 @@
 #define SYSTEM_BASE_ADDRESS 0x600C0000
 #define SYSTIMER_BASE_ADDRESS 0x60023000
 #define INTERRUPT_MATRIX_BASE_ADDRESS 0x600C2000 
+
+#ifndef __ASSEMBLER__
 
 /*==========================================
          Periphereal Control Registers 
@@ -28,18 +34,23 @@
 #define SYSTIMER_UNIT0_OP_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0004))
 #define SYSTIMER_COMP0_LOAD_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0050))
 #define SYSTIMER_INT_ENA_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0064))
+#endif
 
 #ifdef __ASSEMBLER__
     #define SYSTIMER_INT_CLR_REG (SYSTIMER_BASE_ADDRESS + 0x006C) //#define for the .macro CLEAR_SYSTIMER_INTERRUPT in port_asm.S
 #else
     #define SYSTIMER_INT_CLR_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x006C))
 
+
+#ifndef __ASSEMBLER__
 /*==========================================
           Interrupt Matrix Registers
   ==========================================*/
 
 #define INTERRUPT_CORE0_SYSTIMER_TARGET0_INT_MAP_REG (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0094))
-#define INTERRUPT_CORE0_CPU_INT_PRI_1_REG  (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0118+(0x4⋅1)))
+#define INTERRUPT_CORE0_CPU_INT_PRI_1_REG  (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0118+0x4))
+
+#endif
 
 /*==========================================
                  Bit masks          

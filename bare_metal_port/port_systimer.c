@@ -35,7 +35,7 @@ void portSetupSystimerInterrupt( void )
     INTERRUPT_CORE0_SYSTIMER_TARGET0_INT_MAP_REG = 1;
     
     //set the priority
-    INTERRUPT_COR0_CPU_INT_PRI_1_REG = 1;
+    INTERRUPT_CORE0_CPU_INT_PRI_1_REG = 1;
 
     //Set the line 1 bit to enable the interrupt on line 1
     __asm volatile ( "csrs mie, %0" :: "r"(1 << 1) );

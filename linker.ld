@@ -51,6 +51,7 @@ SECTIONS {
     _stack_bottom = .;
     . += 2048; 
     _stack_top = .;
+    __freertos_irq_stack_top = .;
     _sp = .;    /* Questo simbolo lo userai nello startup.S */
   } > dram 
 
@@ -74,6 +75,7 @@ SECTIONS {
   PROVIDE(_end = .);
 }
 
+/*
 PROVIDE(uart_tx_one_char = 0x40000068);
 PROVIDE(uart_tx_one_char2 = 0x4000006c);
 PROVIDE(uart_rx_one_char = 0x40000070);
@@ -93,3 +95,4 @@ PROVIDE(printf = 0x40000040);
 PROVIDE(__udivdi3 = 0x400008ac);
 PROVIDE(__umoddi3 = 0x400008bc);
 PROVIDE(__divdi3 = 0x400007b4);
+*/
