@@ -13,8 +13,9 @@ typedef enum {
 
 typedef struct{
     uart_sclk_t src_clock;
-    uint32_t baude_rate;
+    uint32_t baud_rate;
     uint8_t  parity_check; //None,Odd ,Even
+    uart_port_t port;
     uint8_t data;
     uint8_t stop;
 }uart_config_t;
@@ -65,12 +66,13 @@ typedef struct {
     volatile uint32_t uart_id;             // 0x0080: Async FIFO status register
 } uart_reg_t;
 
-#define UART_PERIP_CLK_EN0_REG (*(volatile uint32_t)(0x600C0000 + 0x0010))
-#define UART_PERIP_RST_EN0_REG (*(volatile uint32_t)(0x600C0000 + 0x0018))
-#define UART_REG(*(uart_reg_t)( 0x60000000 ))
+#define SYSTEM_PERIP_CLK_EN0_REG (*(volatile uint32_t*)(0x600C0000 + 0x0010))
+#define SYSTEM_PERIP_RST_EN0_REG (*(volatile uint32_t*)(0x600C0000 + 0x0018))
+#define UART_REG (*(volatile uart_reg_t*)( 0x60000000 ))
 
 
 void hal_uart_init(uart_port_t *port, uart_config_t *config);
-void hal_uart_write_byte(uart_port_t *port, uint8_t byte);
-(uart_port_t *port);
+void hal_gpio_uart_setup(void);
+void hal_uart_write_byte(uint8_t byte);
+uint8_t hal_uart_read_byte(uint8_t *data);
 

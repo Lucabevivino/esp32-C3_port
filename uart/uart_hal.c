@@ -1,5 +1,6 @@
 #include <uart_hal.h>
-
+#include <gpio.h>
+#include <uart_pins.h>
 
 uint32_t get_clk_freq(uart_sclk_t sclk) {
     switch (sclk) {
@@ -10,39 +11,39 @@ uint32_t get_clk_freq(uart_sclk_t sclk) {
     }
 }
 
-divisor_t get_clk_div(uint32_t freq, uint32_t bauderate){ 
+divisor_t get_clk_div(uint32_t freq, uint32_t baudrate){ 
     uint32_t div_val = (uint32_t)((((uint64_t)freq << 4) + (baudrate / 2)) / baudrate);
     divisor_t divisor;
-    divisor->integral = div_val >> 4;
-    divisor->frag = div_val & 0xF;
+    divisor.integral = div_val >> 4;
+    divisor.frag = div_val & 0xF;
     return divisor;
 }
 
 void hal_uart_init(uart_port_t *port, uart_config_t *config){
     
     // INITIALISATION
-    SYSTEM_PERIP_CLK_EN0_REG = (1 << 24);
+    SYSTEM_PERIP_CLK_EN0_REG |= (1 << 24);
     
     if(config->port){
-        SYSTEM_PERIP_CLK_EN0_REG = (1 << 5);
-        UART_PERIP_RST_EN0_REG = (0 << 5);
+        SYSTEM_PERIP_CLK_EN0_REG |= (1 << 5);
+        SYSTEM_PERIP_RST_EN0_REG &= ~(1 << 5);
     }
     
     else{
-        SYSTEM_PERIP_CLK_EN0_REG = (1 << 2);
-        SYSTEM_PERIP_RST_EN0_REG = (0 << 2);
+        SYSTEM_PERIP_CLK_EN0_REG |= (1 << 2);
+        SYSTEM_PERIP_RST_EN0_REG &= ~(1 << 2);
     }
 
-    UART_REG.clk_conf = (1 << 23);
+    UART_REG.clk_conf |= (1 << 23);
 
     if(config->port){
-        SYSTEM_PERIP_RST_EN0_REG = (1 << 5);
-        SYSTEM_PERIP_RST_EN0_REG = (0 << 5);
+        SYSTEM_PERIP_RST_EN0_REG |= (1 << 5);
+        SYSTEM_PERIP_RST_EN0_REG &= ~(1 << 5);
     }
  
     else{
-        SYSTEM_PERIP_RST_EN0_REG = (1 << 2);
-        SYSTEM_PERIP_RST_EN0_REG = (0 << 2);
+        SYSTEM_PERIP_RST_EN0_REG |= (1 << 2);
+        SYSTEM_PERIP_RST_EN0_REG &= ~(1 << 2);
     }
     
     UART_REG.clk_conf |= (1 << 23);
@@ -54,18 +55,18 @@ void hal_uart_init(uart_port_t *port, uart_config_t *config){
     
     while(UART_REG.uart_id & (1 << 31)){}
 
-    UART0.clk_conf |= (config->src_clock & 0x3);
+    UART_REG.clk_conf |= (config->src_clock & 0x3);
     
     uint32_t freq = get_clk_freq(config->src_clock);
     
-    divisor_t divisor = get_clk_div(freq, config->baudrate);
+    divisor_t divisor = get_clk_div(freq, config->baud_rate);
     
     UART_REG.clkdiv |= ((divisor.integral & 0xFFF) | ((divisor.frag & 0xF) << 20));
     UART_REG.conf0 |= (0x3 << 2);
     
     // 6. RESET FIFO (Indispensabile per iniziare puliti)
-    port->conf0 |= (1 << 17) | (1 << 18); // TX_RST e RX_RST
-    port->conf0 &= ~((1 << 17) | (1 << 18));
+    UART_REG.conf0 |= (1 << 17) | (1 << 18); // TX_RST e RX_RST
+    UART_REG.conf0 &= ~((1 << 17) | (1 << 18));
     
     UART_REG.conf0 |= (1 << 1) | (1 <<  0);
 
@@ -79,20 +80,46 @@ void hal_uart_init(uart_port_t *port, uart_config_t *config){
     return;    
 }
 
+void hal_gpio_uart_setup() {
+    //Enable GPIO clock
+     SYSTEM_PERIP_CLK_EN0_REG |= (1 << 1); // GPIO clock
+
+    // 2. Configure TX (GPIO 21)
+    GPIO_FUNC_OUT_SEL_21_REG = U0TXD_OUT_IDX;
+
+    // 3. Configure RX (GPIO 20)
+    // U0RXD_IN_SEL_REG (0x0018) -> Connect GPIO 20
+    GPIO_FUNC_IN_SEL_U0RX_REG = (UART0_RX_PIN & 0x3F) | (1 << 6);
+
+    //GPIO config in IO_MUX
+    IO_MUX.gpio[21] |= (1 << 12); // Function 1
+    IO_MUX.gpio[20] |= (1 << 12) | (1 << 9); // Function 1 + Input Enable
+}
+
 void hal_uart_write_byte(uint8_t byte){
     
     while (((UART_REG.status >> 16) & 0xFF) >= 128) {}
 
-    UART_REG.fifo = data;    
+    UART_REG.fifo = byte;    
 }
 
-unsigned int hal_uart_read_byte(uint8_t *data){
+uint8_t hal_uart_read_byte(uint8_t *data){
     
-    uint8_t rx_count = (hw->status & 0xFF);
+    uint8_t rx_count = (UART_REG.status & 0xFF);
 
     if(rx_count > 0){
-        *data_out = (uint8_t)(hw->fifo & 0xFF);
+        *data = (uint8_t)(UART_REG.fifo & 0xFF);
         return 1;
     }
     return 0;
 }
+
+/* void hal_uart_write_string(uint8_t *byte_string){
+    uint8_t *curr_byte = byte_string;
+    while((((UART_REG.status >> 16) & 0xFF) <= 128)||curr_byte != NULL){
+        UART_REG.fifo = *curr_byte;
+        curr_byte = byte_string + sizeof(uint8_t);
+    }
+}*/
+
+

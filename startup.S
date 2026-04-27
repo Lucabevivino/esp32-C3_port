@@ -1,27 +1,27 @@
-.section .entry
+.section .entry, "ax"
+.global _start
+.align 4
+
+_start:
+    la t0, reset_handler
+    jr t0
+
+.section .vectors, "ax"
 .align 8
 .global _vector_table
 
-_vectore_table:
+_vector_table:
     .option push
     .option norelax
      j trap_handler
 
-.global _start
-
-_start:
-    j reset_handler
-    .align 4
-    /* Set up stack pointer and global pointer */
 
 reset_handler:
-
 .option push
 .option norelax
-1:  auipc   gp, %pcrel_hi(__global_pointer$)
-    addi    gp, gp, %pcrel_lo(1b)
+    la gp, __global_pointer$
 .option pop
-    la      sp, _stack_top
+    la      sp, _sp
     
     la t0, _vector_table
     csrw    mtvec, t0
@@ -37,7 +37,7 @@ copy_data_loop:
     addi    t2, t2, 4
     sw      t3, -4(t2)
 copy_data_loop_end:
-    bltu    t0, t1, copy_data_loop
+    bltu    t2, t1, copy_data_loop
 
     /* Clear bss sections */
     la      t0, _sbss
@@ -50,7 +50,8 @@ clear_bss_loop_end:
     bltu    t0, t1, clear_bss_loop
 
     /* Run the main function */
-    jal     main
+    la t0,   main
+    jalr ra, t0
 
     ebreak
 end_loop:

@@ -1,27 +1,30 @@
-MEMORY {
-  iache  (rwx)  : ORIGIN = 0X4037c000, LENGTH = 16k
-  iram   (rwx)  : ORIGIN = 0x40380400, LENGTH = 32k 
-  dram   (rw)   : ORIGIN = 0x3fc80000 + LENGTH(iram), LENGTH = 128k
-}
 
-_eram = ORIGIN(dram) + LENGTH(dram);
 ENTRY(_start)
+
+MEMORY {
+  iram   (rwx)  : ORIGIN = 0x40380000, LENGTH = 128k 
+  dram   (rw)   : ORIGIN = 0x3fc80000, LENGTH = 128k
+
+  irom   (rx)   : ORIGIN = 0x42000000, LENGTH = 4M
+  drom   (r)    : ORIGIN = 0x3C000000, LENGTH = 4M
+}
 
 SECTIONS {
  
-  .entry : {
+  /* .entry 0x40380000 : {
       KEEP(*(.entry))
   } > iram
+  */
   
   .vectors : ALIGN(256) {
       _vector_table = .;
       KEEP(*(.vectors))
   } > iram
 
-  .text     : { 
+  .text     : ALIGN(16) { 
       KEEP(*(.init))
       *(.text) 
-      *(.text*) 
+      *(.text.*) 
       KEEP(*(.fini))
   } > iram
   
@@ -29,11 +32,14 @@ SECTIONS {
 
   .data : {
     . = ALIGN(16);
-    PROVIDE(__global_pointer$ = . + 0x800);
     _sdata = .;
-    *(.data)
+    
+    KEEP(*(.data))
     *(.data*)
-    *(.sdata)
+    
+    __global_pointer$ = . + 0x800;
+    
+    KEEP(*(.sdata))
     *(.sdata*)
     *(.srodata)
     *(.srodata*)
@@ -46,15 +52,6 @@ SECTIONS {
     _edata = .;
   } > dram AT > iram
 
-  .stack (NOLOAD) : {
-    . = ALIGN(16);
-    _stack_bottom = .;
-    . += 2048; 
-    _stack_top = .;
-    __freertos_irq_stack_top = .;
-    _sp = .;    /* Questo simbolo lo userai nello startup.S */
-  } > dram 
-
   .bss (NOLOAD): {
     . = ALIGN(16);
     _sbss = .;
@@ -66,14 +63,26 @@ SECTIONS {
     . = ALIGN(16);
     _ebss = .;
   } > dram
+  
+  .stack (NOLOAD) : {
+    . = ALIGN(16);
+    _stack_bottom = .;
+    . += 2048; 
+    _stack_top = .;
+    __freertos_irq_stack_top = .;
+    _sp = .;    /* Questo simbolo lo userai nello startup.S */
+  } > dram 
 
-  heap_start = _ebss;
+
+  heap_start = ALIGN(_stack_top, 16);
   heap_end = _eram;
   
   . = ALIGN(16);
   PROVIDE(end = .);
   PROVIDE(_end = .);
 }
+
+EXTERN(__global_pointer$)
 
 /*
 PROVIDE(uart_tx_one_char = 0x40000068);

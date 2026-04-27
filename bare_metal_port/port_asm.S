@@ -79,7 +79,7 @@ definitions. */
 #ifndef portasmHAS_SIFIVE_CLINT
     #define portasmHAS_SIFIVE_CLINT 0
 #endif
-
+.section .iram, "ax"
 .global xPortStartFirstTask
 .global pxPortInitialiseStack
 .global freertos_risc_v_trap_handler
@@ -288,7 +288,7 @@ freertos_risc_v_application_interrupt_handler:
     j .
 /*-----------------------------------------------------------*/
 
-.section .text.freertos_risc_v_exception_handler
+//.section .text.freertos_risc_v_exception_handler
 freertos_risc_v_exception_handler:
     portcontextSAVE_EXCEPTION_CONTEXT
     /* a0 now contains mcause. */
@@ -302,14 +302,14 @@ other_exception:
     portcontextRESTORE_CONTEXT
 /*-----------------------------------------------------------*/
 
-.section .text.freertos_risc_v_interrupt_handler
+//.section .text.freertos_risc_v_interrupt_handler
 freertos_risc_v_interrupt_handler:
     portcontextSAVE_INTERRUPT_CONTEXT
     call freertos_risc_v_application_interrupt_handler
     portcontextRESTORE_CONTEXT
 /*-----------------------------------------------------------*/
 
-.section .text.freertos_risc_v_mtimer_interrupt_handler
+//.section .text.freertos_risc_v_mtimer_interrupt_handler
 freertos_risc_v_mtimer_interrupt_handler:
     portcontextSAVE_INTERRUPT_CONTEXT
     portUPDATE_MTIMER_COMPARE_REGISTER
@@ -320,7 +320,7 @@ exit_without_context_switch:
     portcontextRESTORE_CONTEXT
 /*-----------------------------------------------------------*/
 
-.section .text.freertos_risc_v_trap_handler
+//.section .text.freertos_risc_v_trap_handler
 .align 8
 freertos_risc_v_trap_handler:
     portcontextSAVE_CONTEXT_INTERNAL
