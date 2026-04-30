@@ -17,5 +17,7 @@
 #define configUSE_16_BIT_TICKS        0
 #define configCHECK_FOR_STACK_OVERFLOW 0 // method 2 it's slower but does catch every stack overflow (not as method 1)
 #define configUSE_MALLOC_FAILED_HOOK  0 // enables a callback function for failed mallocs (usefull in DEBUG)
-
+#define configIDLE_SHOULD_YIELD              1
+#define configUSE_MUTEXES                    1
+#define configUSE_RECURSIVE_MUTEXES          1
 #endif

@@ -12,12 +12,12 @@ typedef enum {
 } uart_sclk_t;
 
 typedef struct{
-    uart_sclk_t src_clock;
+    uint32_t src_clock;
     uint32_t baud_rate;
-    uint8_t  parity_check; //None,Odd ,Even
-    uart_port_t port;
-    uint8_t data;
-    uint8_t stop;
+    uint32_t   parity_check; //None,Odd ,Even
+    uint32_t  port;
+    uint32_t data;
+    uint32_t stop;
 }uart_config_t;
 
 typedef struct{
@@ -71,7 +71,7 @@ typedef struct {
 #define UART_REG (*(volatile uart_reg_t*)( 0x60000000 ))
 
 
-void hal_uart_init(uart_port_t *port, uart_config_t *config);
+void hal_uart_init(uart_config_t *config);
 void hal_gpio_uart_setup(void);
 void hal_uart_write_byte(uint8_t byte);
 uint8_t hal_uart_read_byte(uint8_t *data);
