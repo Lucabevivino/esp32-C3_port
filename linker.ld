@@ -2,6 +2,7 @@ ENTRY(_start)
 
 MEMORY
 {
+  flash (rx) : ORIGIN = 0x0, LENGTH = 4M 
   /* IRAM: Primi 64KB della SRAM (Bus Istruzioni) */
   iram (rx) : ORIGIN = 0x40380000, LENGTH = 64K
   /* DRAM: Restante SRAM (Bus Dati). Inizia dopo i 64KB della IRAM fisica */
@@ -20,27 +21,16 @@ SECTIONS
     . = ALIGN(256);       /* Forza l'allineamento per i vettori */
     _vector_table = .;
     KEEP(*(.vectors))
-
+    *(.iram .iram.*)
     *(.text .text.*)
     . = ALIGN(4);
     _etext = .;
-  } > iram
+  } > iram AT > flash
+ 
+  _sitext = LOADADDR(.text);
 
-
-  .iram_extras : AT(ALIGN(LOADADDR(.text) + SIZEOF(.text), 4))
-  {
-    . = ALIGN(4);
-    _siram_extras = .;
-    *(.iram .iram.*)
-    *(.rodata .rodata.*)
-    *(.srodata .srodata.*)
-    . = ALIGN(4);
-    _eiram_extras = .;
-  } > iram
-
-  _siram_extras_flash = LOADADDR(.iram_extras);
   /* Calcoliamo il nuovo indirizzo di carico per i dati */
-  _sidata = LOADADDR(.iram_extras) + SIZEOF(.iram_extras);
+  _sidata = ALIGN(LOADADDR(.text) + SIZEOF(.text), 4);
 
   /* 2. Dati inizializzati (DRAM) */
   /* Verranno caricati in Flash ma risiederanno in RAM */
@@ -49,6 +39,8 @@ SECTIONS
      __global_pointer$ = . + 0x800;
     _sdata = .;
     *(.data .data.*)
+    *(.rodata .rodata.*)
+    *(.srodata .srodata.*)
     *(.sdata .sdata.*)
     . = ALIGN(4);
     _edata = .;
