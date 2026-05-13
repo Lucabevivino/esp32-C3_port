@@ -3,6 +3,7 @@
 
 #define configcpu_clock_hz            ( 160000000ul )   /* o il clock reale che impostate */
 #define configTICK_RATE_HZ            ( ( TickType_t ) 1000 )
+#define SYSTIMER_PRIORITY             2
 #define configMTIME_BASE_ADDRESS      0
 #define configMTIMECMP_BASE_ADDRESS   0
 #define configMINIMAL_STACK_SIZE      100
