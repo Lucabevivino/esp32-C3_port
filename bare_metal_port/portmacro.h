@@ -46,21 +46,10 @@
  *-----------------------------------------------------------
  */
 
-/* Type definitions. */
-#if __riscv_xlen == 64
-    #define portSTACK_TYPE           uint64_t
-    #define portBASE_TYPE            int64_t
-    #define portUBASE_TYPE           uint64_t
-    #define portMAX_DELAY            ( TickType_t ) 0xffffffffffffffffUL
-    #define portPOINTER_SIZE_TYPE    uint64_t
-#elif __riscv_xlen == 32
-    #define portSTACK_TYPE           uint32_t
-    #define portBASE_TYPE            int32_t
-    #define portUBASE_TYPE           uint32_t
-    #define portMAX_DELAY            ( TickType_t ) 0xffffffffUL
-#else /* if __riscv_xlen == 64 */
-    #error "Assembler did not define __riscv_xlen"
-#endif /* if __riscv_xlen == 64 */
+#define portSTACK_TYPE           uint32_t
+#define portBASE_TYPE            int32_t
+#define portUBASE_TYPE           uint32_t
+#define portMAX_DELAY            ( TickType_t ) 0xffffffffUL
 
 typedef portSTACK_TYPE   StackType_t;
 typedef portBASE_TYPE    BaseType_t;
@@ -174,28 +163,6 @@ extern size_t xCriticalNesting;
 
 #define portMEMORY_BARRIER()    __asm volatile ( "" ::: "memory" )
 /*-----------------------------------------------------------*/
-
-/* configCLINT_BASE_ADDRESS is a legacy definition that was replaced by the
- * configMTIME_BASE_ADDRESS and configMTIMECMP_BASE_ADDRESS definitions.  For
- * backward compatibility derive the newer definitions from the old if the old
- * definition is found. */
-#if defined( configCLINT_BASE_ADDRESS ) && !defined( configMTIME_BASE_ADDRESS ) && ( configCLINT_BASE_ADDRESS == 0 )
-
-/* Legacy case where configCLINT_BASE_ADDRESS was defined as 0 to indicate
- * there was no CLINT.  Equivalent now is to set the MTIME and MTIMECMP
- * addresses to 0. */
-    #define configMTIME_BASE_ADDRESS       ( 0 )
-    #define configMTIMECMP_BASE_ADDRESS    ( 0 )
-#elif defined( configCLINT_BASE_ADDRESS ) && !defined( configMTIME_BASE_ADDRESS )
-
-/* Legacy case where configCLINT_BASE_ADDRESS was set to the base address of
- * the CLINT.  Equivalent now is to derive the MTIME and MTIMECMP addresses
- * from the CLINT address. */
-    #define configMTIME_BASE_ADDRESS       ( ( configCLINT_BASE_ADDRESS ) + 0xBFF8UL )
-    #define configMTIMECMP_BASE_ADDRESS    ( ( configCLINT_BASE_ADDRESS ) + 0x4000UL )
-#elif !defined( configMTIME_BASE_ADDRESS ) || !defined( configMTIMECMP_BASE_ADDRESS )
-    #error "configMTIME_BASE_ADDRESS and configMTIMECMP_BASE_ADDRESS must be defined in FreeRTOSConfig.h.  Set them to zero if there is no MTIME (machine time) clock.  See www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html"
-#endif /* if defined( configCLINT_BASE_ADDRESS ) && !defined( configMTIME_BASE_ADDRESS ) && ( configCLINT_BASE_ADDRESS == 0 ) */
 
 /* *INDENT-OFF* */
 #ifdef __cplusplus
