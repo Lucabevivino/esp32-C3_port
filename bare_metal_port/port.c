@@ -38,18 +38,6 @@
 /* Standard includes. */
 #include "string.h"
 
-#ifdef configCLINT_BASE_ADDRESS
-    #warning "The configCLINT_BASE_ADDRESS constant has been deprecated. configMTIME_BASE_ADDRESS and configMTIMECMP_BASE_ADDRESS are currently being derived from the (possibly 0) configCLINT_BASE_ADDRESS setting.  Please update to define configMTIME_BASE_ADDRESS and configMTIMECMP_BASE_ADDRESS directly in place of configCLINT_BASE_ADDRESS. See www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html"
-#endif
-
-#ifndef configMTIME_BASE_ADDRESS
-    #warning "configMTIME_BASE_ADDRESS must be defined in FreeRTOSConfig.h. If the target chip includes a memory-mapped mtime register then set configMTIME_BASE_ADDRESS to the mapped address.  Otherwise set configMTIME_BASE_ADDRESS to 0.  See www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html"
-#endif
-
-#ifndef configMTIMECMP_BASE_ADDRESS
-    #warning "configMTIMECMP_BASE_ADDRESS must be defined in FreeRTOSConfig.h. If the target chip includes a memory-mapped mtimecmp register then set configMTIMECMP_BASE_ADDRESS to the mapped address.  Otherwise set configMTIMECMP_BASE_ADDRESS to 0.  See www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html"
-#endif
-
 /* Let the user override the pre-loading of the initial RA. */
 #ifdef configTASK_RETURN_ADDRESS
     #define portTASK_RETURN_ADDRESS    configTASK_RETURN_ADDRESS
@@ -83,6 +71,11 @@ const StackType_t xISRStackTop = ( StackType_t ) &( xISRStack[ configISR_STACK_S
  * generate the tick interrupt.
  */
 // void vPortSetupTimerInterrupt( void ) __attribute__( ( weak ) );
+
+/* The MTIME has been substituted from the SYSTIMER, the definition of PortSetupSystimerInterrupt
+ * is in the port_systimer.h and the implementation in port_systimer.c . All
+ * the relative registers are defined in port_systimer_regs.h
+ */
 
 /*-----------------------------------------------------------*/
 
