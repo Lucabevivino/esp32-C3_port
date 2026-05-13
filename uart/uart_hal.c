@@ -4,7 +4,7 @@
 
 uint32_t get_clk_freq(uart_sclk_t sclk) {
     switch (sclk) {
-        case UART_SCLK_APB:  return 80000000;
+        case UART_SCLK_APB:  return 40000000;
         case UART_SCLK_XTAL: return 40000000;
         case UART_SCLK_RTC:  return 17500000; // Valore indicativo
         default:             return 80000000;
@@ -32,7 +32,6 @@ void hal_uart_init(uart_config_t *config){
         SYSTEM_PERIP_RST_EN0_REG &= ~(1 << 2);
     }
     
-    UART_REG.clk_conf |= (1 << 22);
     UART_REG.clk_conf |= (1 << 23);
 
     if(config->port){
@@ -44,17 +43,23 @@ void hal_uart_init(uart_config_t *config){
     }
     
     UART_REG.clk_conf &= ~(1 << 23);
-    
+    UART_REG.uart_id &= ~(1 << 30);
+
     // CONFIGURATION
+    
+    while (UART_REG.uart_id & (1 << 31)) {}
+
     // Azzera i bit 20 e 21, poi imposta la sorgente shiftata di 20
     UART_REG.clk_conf = (UART_REG.clk_conf & ~(0x3 << 20))|((config->src_clock & 0x3) << 20); 
-    
+    UART_REG.clk_conf |= (1 << 22);
+
     uint32_t freq = get_clk_freq(config->src_clock);
     
     divisor_t divisor = get_clk_div(freq, config->baud_rate);
     
     UART_REG.clkdiv |= ((divisor.integral & 0xFFF) | ((divisor.frag & 0xF) << 20));
-    UART_REG.conf0 |= (0x3 << 2);
+    UART_REG.conf0 |= (config->data << 2)|(config->stop << 4);
+    UART_REG.conf0 |= (config->parity_check << 0)|(1 << 1);
     
 
     // 6. RESET FIFO (Indispensabile per iniziare puliti)
@@ -74,8 +79,9 @@ void hal_uart_init(uart_config_t *config){
     UART_REG.uart_id |= (1 << 31);
 
     // 3. Wait for completion
-    while (UART_REG.uart_id & (1 << 31)) {} 
- 
+    UART_REG.uart_id |= (1 << 31);
+    while (UART_REG.uart_id & (1 << 31)) {}
+
     return;    
 }
 

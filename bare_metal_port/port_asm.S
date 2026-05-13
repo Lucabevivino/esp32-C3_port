@@ -99,9 +99,10 @@ definitions. */
 /*-----------------------------------------------------------*/
  .macro CLEAR_SYSTIMER_INTERRUPT
     li t0, SYSTIMER_INT_CLR_REG
-    addi t1, t1, 1
+    li t1, 1
     sw t1, 0(t0)
-    .endm
+    fence io, io
+  .endm
 /*-----------------------------------------------------------*/
 
 /*
@@ -170,46 +171,20 @@ definitions. */
  * pxCode
  */
 pxPortInitialiseStack:
-    addi a0, a0, -portWORD_SIZE         /* Space for critical nesting count. */
-    store_x x0, 0(a0)                   /* Critical nesting count starts at 0 for every task. */
+    addi a0, a0, -portCONTEXT_SIZE
+    store_x a1, 0(a0)
+    
+    addi t0, x0, 0x188
+    slli t0, t0, 4
+    store_x t0, 1 * portWORD_SIZE(a0)
 
-#ifdef __riscv_32e
-    addi a0, a0, -(6 * portWORD_SIZE)   /* Space for registers x10-x15. */
-#else
-    addi a0, a0, -(22 * portWORD_SIZE)  /* Space for registers x10-x31. */
-#endif
-    store_x a2, 0(a0)                   /* Task parameters (pvParameters parameter) goes into register x10/a0 on the stack. */
-
-    addi a0, a0, -(6 * portWORD_SIZE)   /* Space for registers x5-x9 + taskReturnAddress (register x1). */
     load_x t0, xTaskReturnAddress
-    store_x t0, 0(a0)                   /* Return address onto the stack. */
+    store_x t0, 2 * portWORD_SIZE(a0)
 
-    csrr t0, mstatus                    /* Obtain current mstatus value. */
-    andi t0, t0, ~0x8                   /* Ensure interrupts are disabled when the stack is restored within an ISR.  Required when a task is created after the scheduler has been started, otherwise interrupts would be disabled anyway. */
-    addi t1, x0, 0x188                  /* Generate the value 0x1880, which are the MPIE=1 and MPP=M_Mode in mstatus. */
-    slli t1, t1, 4
-    or t0, t0, t1                       /* Set MPIE and MPP bits in mstatus value. */
+    store_x a2, 8 * portWORD_SIZE(a0)
 
-#if( configENABLE_FPU == 1 )
-    /* Mark the FPU as clean in the mstatus value. */
-    li t1, ~MSTATUS_FS_MASK
-    and t0, t0, t1
-    li t1, MSTATUS_FS_CLEAN
-    or t0, t0, t1
-#endif
+    store_x x0, portCRITICAL_NESTING_OFFSET * portWORD_SIZE(a0)
 
-#if( configENABLE_VPU == 1 )
-    /* Mark the VPU as clean in the mstatus value. */
-    li t1, ~MSTATUS_VS_MASK
-    and t0, t0, t1
-    li t1, MSTATUS_VS_CLEAN
-    or t0, t0, t1
-#endif
-
-    addi a0, a0, -portWORD_SIZE
-    store_x t0, 0(a0)                   /* mstatus onto the stack. */
-
-    addi t0, x0, portasmADDITIONAL_CONTEXT_SIZE /* The number of chip specific additional registers. */
 chip_specific_stack_frame:              /* First add any chip specific registers to the stack frame being created. */
     beq t0, x0, 1f                      /* No more chip specific registers to save. */
     addi a0, a0, -portWORD_SIZE         /* Make space for chip specific register. */
@@ -217,9 +192,6 @@ chip_specific_stack_frame:              /* First add any chip specific registers
     addi t0, t0, -1                     /* Decrement the count of chip specific registers remaining. */
     j chip_specific_stack_frame         /* Until no more chip specific registers. */
 1:
-
-    addi a0, a0, -portWORD_SIZE
-    store_x a1, 0(a0)                   /* mret value (pxCode parameter) onto the stack. */
     ret
 /*-----------------------------------------------------------*/
 

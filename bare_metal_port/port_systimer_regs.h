@@ -22,17 +22,21 @@
   ==========================================*/
 
 #define SYSTEM_PERIP_CLK_EN0_REG (*(volatile uint32_t *)(SYSTEM_BASE_ADDRESS + 0x0010))
+#define SYSTEM_PERIP_RST_EN0_REG (*(volatile uint32_t *)(SYSTEM_BASE_ADDRESS + 0x0018))
 
 /*========================================== 
              SYSTIMER Registers
   ==========================================*/
 
 #define SYSTIMER_CONF_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS))
-#define SYSTIMER_TIMER_TARGET0_LO_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x001C)) 
-#define SYSTIMER_TIMER_TARGET0_HI_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0020))
+#define SYSTIMER_UNIT0_LOAD_HI_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x000C))
+#define SYSTIMER_UNIT0_LOAD_LO_REG (*(volatile uint32_t *) (SYSTIMER_BASE_ADDRESS + 0x0010))
+#define SYSTIMER_TIMER_TARGET0_LO_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0020)) 
+#define SYSTIMER_TIMER_TARGET0_HI_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x001C))
 #define SYSTIMER_TARGET0_CONF_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0034))
 #define SYSTIMER_UNIT0_OP_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0004))
 #define SYSTIMER_COMP0_LOAD_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0050))
+#define SYSTIMER_UNIT0_LOAD_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x005C))
 #define SYSTIMER_INT_ENA_REG (*(volatile uint32_t *)(SYSTIMER_BASE_ADDRESS + 0x0064))
 #endif
 
@@ -48,8 +52,8 @@
   ==========================================*/
 
 #define INTERRUPT_CORE0_SYSTIMER_TARGET0_INT_MAP_REG (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0094))
-#define INTERRUPT_CORE0_CPU_INT_PRI_1_REG  (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0118+0x4))
-
+#define INTERRUPT_CORE0_CPU_INT_PRI_1_REG  (*(volatile uint32_t *)(INTERRUPT_MATRIX_BASE_ADDRESS+ 0x0118))
+#define INTERRUPT_CORE0_CPU_INT_ENABLE_REG (*(volatile uint32_t *) (INTERRUPT_MATRIX_BASE_ADDRESS + 0x0104))
 #endif
 
 /*==========================================
@@ -57,7 +61,7 @@
   ==========================================*/
 
 //SYSTEM_PERIP_CLK_EN0_REG to enable the clock 
-#define SYSTEM_SYSTIMER_CLK_EN (1U << 29)
+#define SYSTEM_SYSTIMER_CLK_EN_RST (1U << 29)
 
 //SYSTIMER_UNIT0_OP_REG setup for periodic timer
 #define SYSTIMER_TIMER_UNIT0_UPDATE (1U << 30)

@@ -60,7 +60,7 @@
     #define portCONTEXT_SIZE               ( 15 * portWORD_SIZE )
     #define portCRITICAL_NESTING_OFFSET    14
 #else
-    #define portCONTEXT_SIZE               ( 31 * portWORD_SIZE )
+    #define portCONTEXT_SIZE               ( 32 * portWORD_SIZE )
     #define portCRITICAL_NESTING_OFFSET    30
 #endif
 
