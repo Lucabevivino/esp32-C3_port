@@ -1,1040 +1,1040 @@
 Archive member included to satisfy reference by file (symbol)
 
 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memset.o)
-                              ./mdk/boot.o (memset)
+                              ./build/./mdk/boot.o (memset)
 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memcpy.o)
-                              ./FreeRTOS-Kernel/queue.o (memcpy)
+                              ./build/./FreeRTOS-Kernel/queue.o (memcpy)
 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clzsi2.o)
-                              ./FreeRTOS-Kernel/tasks.o (__clzsi2)
+                              ./build/./FreeRTOS-Kernel/tasks.o (__clzsi2)
 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_udivdi3.o)
-                              ./uart/uart_hal.o (__udivdi3)
+                              ./build/./uart/uart_hal.o (__udivdi3)
 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clz.o)
                               /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clzsi2.o) (__clz_tab)
 
 Discarded input sections
 
- .text          0x00000000        0x0 ./bare_metal_port/port_asm.o
- .data          0x00000000        0x0 ./bare_metal_port/port_asm.o
- .bss           0x00000000        0x0 ./bare_metal_port/port_asm.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .group         0x00000000        0xc ./mdk/boot.o
- .data          0x00000000        0x0 ./mdk/boot.o
- .bss           0x00000000        0x0 ./mdk/boot.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/tasks.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/tasks.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/tasks.o
+ .text          0x00000000        0x0 ./build/./bare_metal_port/port_asm.o
+ .data          0x00000000        0x0 ./build/./bare_metal_port/port_asm.o
+ .bss           0x00000000        0x0 ./build/./bare_metal_port/port_asm.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./mdk/boot.o
+ .data          0x00000000        0x0 ./build/./mdk/boot.o
+ .bss           0x00000000        0x0 ./build/./mdk/boot.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/tasks.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/tasks.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskEndScheduler
-                0x00000000       0x14 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x14 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGetTickCount
-                0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGetTickCountFromISR
-                0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
  .text.uxTaskGetNumberOfTasks
-                0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
  .text.pcTaskGetName
-                0x00000000       0x1c ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x1c ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskCatchUpTicks
-                0x00000000       0x3c ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x3c ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskPlaceOnEventList
-                0x00000000       0x3c ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x3c ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskPlaceOnUnorderedEventList
-                0x00000000       0x68 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x68 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskRemoveFromEventList
-                0x00000000      0x148 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x148 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskRemoveFromUnorderedEventList
-                0x00000000       0xfc ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0xfc ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskSetTimeOutState
-                0x00000000       0x34 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x34 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskInternalSetTimeOutState
-                0x00000000       0x1c ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x1c ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskCheckForTimeOut
-                0x00000000       0x74 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x74 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskMissedYield
-                0x00000000       0x10 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x10 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGetCurrentTaskHandle
-                0x00000000        0xc ./FreeRTOS-Kernel/tasks.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGetCurrentTaskHandleForCore
-                0x00000000       0x18 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x18 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskPriorityInherit
-                0x00000000      0x144 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x144 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskPriorityDisinherit
-                0x00000000       0xf0 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0xf0 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskPriorityDisinheritAfterTimeout
-                0x00000000      0x120 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x120 ./build/./FreeRTOS-Kernel/tasks.o
  .text.uxTaskResetEventItemValue
-                0x00000000       0x28 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x28 ./build/./FreeRTOS-Kernel/tasks.o
  .text.pvTaskIncrementMutexHeldCount
-                0x00000000       0x1c ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x1c ./build/./FreeRTOS-Kernel/tasks.o
  .text.ulTaskGenericNotifyTake
-                0x00000000      0x14c ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x14c ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGenericNotifyWait
-                0x00000000      0x190 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x190 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGenericNotify
-                0x00000000      0x180 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x180 ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGenericNotifyFromISR
-                0x00000000      0x1b0 ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x1b0 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskGenericNotifyGiveFromISR
-                0x00000000      0x13c ./FreeRTOS-Kernel/tasks.o
+                0x00000000      0x13c ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskGenericNotifyStateClear
-                0x00000000       0x48 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x48 ./build/./FreeRTOS-Kernel/tasks.o
  .text.ulTaskGenericNotifyValueClear
-                0x00000000       0x44 ./FreeRTOS-Kernel/tasks.o
+                0x00000000       0x44 ./build/./FreeRTOS-Kernel/tasks.o
  .text.vTaskResetState
-                0x00000000       0x5c ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x3c ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/tasks.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/list.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/list.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/list.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/list.o
+                0x00000000       0x5c ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x3c ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/tasks.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/list.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/list.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/list.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/list.o
  .text.vListInsertEnd
-                0x00000000       0x2c ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x11c ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0xb0 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/list.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/queue.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/queue.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/queue.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x2c ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x11c ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0xb0 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/list.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/queue.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/queue.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/queue.o
  .text.prvCopyDataToQueue
-                0x00000000      0x108 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x108 ./build/./FreeRTOS-Kernel/queue.o
  .text.prvUnlockQueue
-                0x00000000      0x124 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x124 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGenericReset
-                0x00000000       0xfc ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xfc ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGenericCreate
-                0x00000000       0xb0 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xb0 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGenericSend
-                0x00000000      0x224 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x224 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueCreateMutex
-                0x00000000       0x70 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x70 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGiveMutexRecursive
-                0x00000000       0x74 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x74 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGenericSendFromISR
-                0x00000000       0xd8 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xd8 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueGiveFromISR
-                0x00000000       0xac ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xac ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueReceive
-                0x00000000      0x258 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x258 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueSemaphoreTake
-                0x00000000      0x2c4 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x2c4 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueTakeMutexRecursive
-                0x00000000       0x60 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x60 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueuePeek
-                0x00000000      0x24c ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x24c ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueReceiveFromISR
-                0x00000000       0xec ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xec ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueuePeekFromISR
-                0x00000000       0x80 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x80 ./build/./FreeRTOS-Kernel/queue.o
  .text.uxQueueMessagesWaiting
-                0x00000000       0x1c ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x1c ./build/./FreeRTOS-Kernel/queue.o
  .text.uxQueueSpacesAvailable
-                0x00000000       0x24 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x24 ./build/./FreeRTOS-Kernel/queue.o
  .text.uxQueueMessagesWaitingFromISR
-                0x00000000        0x8 ./FreeRTOS-Kernel/queue.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/queue.o
  .text.vQueueDelete
-                0x00000000        0x8 ./FreeRTOS-Kernel/queue.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/queue.o
  .text.uxQueueGetQueueItemSize
-                0x00000000        0x8 ./FreeRTOS-Kernel/queue.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/queue.o
  .text.uxQueueGetQueueLength
-                0x00000000        0x8 ./FreeRTOS-Kernel/queue.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueIsQueueEmptyFromISR
-                0x00000000        0xc ./FreeRTOS-Kernel/queue.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/queue.o
  .text.xQueueIsQueueFullFromISR
-                0x00000000       0x14 ./FreeRTOS-Kernel/queue.o
- .debug_info    0x00000000     0x1ab5 ./FreeRTOS-Kernel/queue.o
- .debug_abbrev  0x00000000      0x374 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0x14 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_info    0x00000000     0x1ab5 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_abbrev  0x00000000      0x374 ./build/./FreeRTOS-Kernel/queue.o
  .debug_loclists
-                0x00000000     0x17dd ./FreeRTOS-Kernel/queue.o
+                0x00000000     0x17dd ./build/./FreeRTOS-Kernel/queue.o
  .debug_aranges
-                0x00000000       0xd0 ./FreeRTOS-Kernel/queue.o
+                0x00000000       0xd0 ./build/./FreeRTOS-Kernel/queue.o
  .debug_rnglists
-                0x00000000      0x2a5 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x22b ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x11c ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0xb0 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x3c ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/queue.o
- .debug_macro   0x00000000       0x80 ./FreeRTOS-Kernel/queue.o
- .debug_line    0x00000000     0x2989 ./FreeRTOS-Kernel/queue.o
- .debug_str     0x00000000    0x1267c ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x2a5 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x22b ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x11c ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0xb0 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x3c ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_macro   0x00000000       0x80 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_line    0x00000000     0x2989 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_str     0x00000000    0x1267c ./build/./FreeRTOS-Kernel/queue.o
  .debug_line_str
-                0x00000000      0x2dd ./FreeRTOS-Kernel/queue.o
- .comment       0x00000000       0x33 ./FreeRTOS-Kernel/queue.o
+                0x00000000      0x2dd ./build/./FreeRTOS-Kernel/queue.o
+ .comment       0x00000000       0x33 ./build/./FreeRTOS-Kernel/queue.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/queue.o
- .debug_frame   0x00000000      0x37c ./FreeRTOS-Kernel/queue.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/queue.o
+ .debug_frame   0x00000000      0x37c ./build/./FreeRTOS-Kernel/queue.o
  .riscv.attributes
-                0x00000000       0x37 ./FreeRTOS-Kernel/queue.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/timers.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/timers.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/timers.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/timers.o
- .debug_info    0x00000000       0x7c ./FreeRTOS-Kernel/timers.o
- .debug_abbrev  0x00000000       0x2e ./FreeRTOS-Kernel/timers.o
+                0x00000000       0x37 ./build/./FreeRTOS-Kernel/queue.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/timers.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/timers.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/timers.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_info    0x00000000       0x7c ./build/./FreeRTOS-Kernel/timers.o
+ .debug_abbrev  0x00000000       0x2e ./build/./FreeRTOS-Kernel/timers.o
  .debug_aranges
-                0x00000000       0x18 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x1be ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x11c ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0xb0 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x80 ./FreeRTOS-Kernel/timers.o
- .debug_macro   0x00000000       0x9e ./FreeRTOS-Kernel/timers.o
- .debug_line    0x00000000       0xf7 ./FreeRTOS-Kernel/timers.o
- .debug_str     0x00000000    0x122c1 ./FreeRTOS-Kernel/timers.o
+                0x00000000       0x18 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x1be ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x11c ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0xb0 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x80 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_macro   0x00000000       0x9e ./build/./FreeRTOS-Kernel/timers.o
+ .debug_line    0x00000000       0xf7 ./build/./FreeRTOS-Kernel/timers.o
+ .debug_str     0x00000000    0x122c1 ./build/./FreeRTOS-Kernel/timers.o
  .debug_line_str
-                0x00000000      0x2c0 ./FreeRTOS-Kernel/timers.o
- .comment       0x00000000       0x33 ./FreeRTOS-Kernel/timers.o
+                0x00000000      0x2c0 ./build/./FreeRTOS-Kernel/timers.o
+ .comment       0x00000000       0x33 ./build/./FreeRTOS-Kernel/timers.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/timers.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/timers.o
  .riscv.attributes
-                0x00000000       0x33 ./FreeRTOS-Kernel/timers.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/event_groups.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/event_groups.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/event_groups.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x33 ./build/./FreeRTOS-Kernel/timers.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/event_groups.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/event_groups.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/event_groups.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupCreate
-                0x00000000       0x44 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x44 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupWaitBits
-                0x00000000      0x178 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000      0x178 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupClearBits
-                0x00000000       0x30 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x30 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupGetBitsFromISR
-                0x00000000        0x8 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupSetBits
-                0x00000000       0xf4 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0xf4 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.xEventGroupSync
-                0x00000000      0x154 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000      0x154 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.vEventGroupDelete
-                0x00000000       0x58 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x58 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.vEventGroupSetBitsCallback
-                0x00000000        0x8 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/event_groups.o
  .text.vEventGroupClearBitsCallback
-                0x00000000       0x2c ./FreeRTOS-Kernel/event_groups.o
- .debug_info    0x00000000      0xa2d ./FreeRTOS-Kernel/event_groups.o
- .debug_abbrev  0x00000000      0x2ac ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x2c ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_info    0x00000000      0xa2d ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_abbrev  0x00000000      0x2ac ./build/./FreeRTOS-Kernel/event_groups.o
  .debug_loclists
-                0x00000000      0xa56 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000      0xa56 ./build/./FreeRTOS-Kernel/event_groups.o
  .debug_aranges
-                0x00000000       0x60 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x60 ./build/./FreeRTOS-Kernel/event_groups.o
  .debug_rnglists
-                0x00000000       0x79 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x1c8 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x11c ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0xb0 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x98 ./FreeRTOS-Kernel/event_groups.o
- .debug_macro   0x00000000       0x23 ./FreeRTOS-Kernel/event_groups.o
- .debug_line    0x00000000      0xc4d ./FreeRTOS-Kernel/event_groups.o
- .debug_str     0x00000000    0x12122 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000       0x79 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x1c8 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x11c ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0xb0 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x98 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_macro   0x00000000       0x23 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_line    0x00000000      0xc4d ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_str     0x00000000    0x12122 ./build/./FreeRTOS-Kernel/event_groups.o
  .debug_line_str
-                0x00000000      0x2d3 ./FreeRTOS-Kernel/event_groups.o
- .comment       0x00000000       0x33 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000      0x2d3 ./build/./FreeRTOS-Kernel/event_groups.o
+ .comment       0x00000000       0x33 ./build/./FreeRTOS-Kernel/event_groups.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/event_groups.o
- .debug_frame   0x00000000      0x170 ./FreeRTOS-Kernel/event_groups.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/event_groups.o
+ .debug_frame   0x00000000      0x170 ./build/./FreeRTOS-Kernel/event_groups.o
  .riscv.attributes
-                0x00000000       0x37 ./FreeRTOS-Kernel/event_groups.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/stream_buffer.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/stream_buffer.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/stream_buffer.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x37 ./build/./FreeRTOS-Kernel/event_groups.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.prvWriteBytesToBuffer
-                0x00000000       0x9c ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x9c ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.prvReadBytesFromBuffer
-                0x00000000       0x9c ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x9c ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.prvReadMessageFromBuffer
-                0x00000000       0xd4 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0xd4 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferGenericCreate
-                0x00000000       0xc8 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0xc8 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.vStreamBufferDelete
-                0x00000000       0x24 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x24 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferReset
-                0x00000000       0xc4 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0xc4 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferResetFromISR
-                0x00000000       0x90 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x90 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferSetTriggerLevel
-                0x00000000       0x24 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x24 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferSpacesAvailable
-                0x00000000       0x30 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x30 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferBytesAvailable
-                0x00000000       0x20 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x20 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferSend
-                0x00000000      0x27c ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000      0x27c ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferSendFromISR
-                0x00000000      0x164 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000      0x164 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferReceive
-                0x00000000      0x204 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000      0x204 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferNextMessageLengthBytes
-                0x00000000       0x70 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x70 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferReceiveFromISR
-                0x00000000       0xc0 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0xc0 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferIsEmpty
-                0x00000000       0x14 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x14 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferIsFull
-                0x00000000       0x44 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x44 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferSendCompletedFromISR
-                0x00000000       0x58 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x58 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.xStreamBufferReceiveCompletedFromISR
-                0x00000000       0x58 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0x58 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.uxStreamBufferGetStreamBufferNotificationIndex
-                0x00000000        0x8 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .text.vStreamBufferSetStreamBufferNotificationIndex
-                0x00000000        0x8 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_info    0x00000000     0x1823 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_abbrev  0x00000000      0x368 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000        0x8 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_info    0x00000000     0x1823 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_abbrev  0x00000000      0x368 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .debug_loclists
-                0x00000000     0x19f9 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000     0x19f9 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .debug_aranges
-                0x00000000       0xc0 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000       0xc0 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .debug_rnglists
-                0x00000000      0x1a2 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x1ff ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x1a5 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x3c ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_macro   0x00000000       0x38 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_line    0x00000000     0x1f63 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_str     0x00000000    0x12723 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000      0x1a2 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x1ff ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x1a5 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x3c ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_macro   0x00000000       0x38 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_line    0x00000000     0x1f63 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_str     0x00000000    0x12723 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .debug_line_str
-                0x00000000      0x2e3 ./FreeRTOS-Kernel/stream_buffer.o
- .comment       0x00000000       0x33 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000      0x2e3 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .comment       0x00000000       0x33 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/stream_buffer.o
- .debug_frame   0x00000000      0x2a8 ./FreeRTOS-Kernel/stream_buffer.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .debug_frame   0x00000000      0x2a8 ./build/./FreeRTOS-Kernel/stream_buffer.o
  .riscv.attributes
-                0x00000000       0x37 ./FreeRTOS-Kernel/stream_buffer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/croutine.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/croutine.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/croutine.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/croutine.o
- .debug_info    0x00000000       0x7c ./FreeRTOS-Kernel/croutine.o
- .debug_abbrev  0x00000000       0x2e ./FreeRTOS-Kernel/croutine.o
+                0x00000000       0x37 ./build/./FreeRTOS-Kernel/stream_buffer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/croutine.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/croutine.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/croutine.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_info    0x00000000       0x7c ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_abbrev  0x00000000       0x2e ./build/./FreeRTOS-Kernel/croutine.o
  .debug_aranges
-                0x00000000       0x18 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0xe8 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x1a5 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x8e ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x51 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/croutine.o
- .debug_macro   0x00000000       0x49 ./FreeRTOS-Kernel/croutine.o
- .debug_line    0x00000000       0xb6 ./FreeRTOS-Kernel/croutine.o
- .debug_str     0x00000000     0xec9a ./FreeRTOS-Kernel/croutine.o
+                0x00000000       0x18 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0xe8 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x1a5 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x8e ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x51 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_macro   0x00000000       0x49 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_line    0x00000000       0xb6 ./build/./FreeRTOS-Kernel/croutine.o
+ .debug_str     0x00000000     0xec9a ./build/./FreeRTOS-Kernel/croutine.o
  .debug_line_str
-                0x00000000      0x269 ./FreeRTOS-Kernel/croutine.o
- .comment       0x00000000       0x33 ./FreeRTOS-Kernel/croutine.o
+                0x00000000      0x269 ./build/./FreeRTOS-Kernel/croutine.o
+ .comment       0x00000000       0x33 ./build/./FreeRTOS-Kernel/croutine.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/croutine.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/croutine.o
  .riscv.attributes
-                0x00000000       0x33 ./FreeRTOS-Kernel/croutine.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .group         0x00000000        0xc ./uart/uart_hal.o
- .text          0x00000000        0x0 ./uart/uart_hal.o
- .data          0x00000000        0x0 ./uart/uart_hal.o
- .bss           0x00000000        0x0 ./uart/uart_hal.o
+                0x00000000       0x33 ./build/./FreeRTOS-Kernel/croutine.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./uart/uart_hal.o
+ .text          0x00000000        0x0 ./build/./uart/uart_hal.o
+ .data          0x00000000        0x0 ./build/./uart/uart_hal.o
+ .bss           0x00000000        0x0 ./build/./uart/uart_hal.o
  .text.get_clk_freq
-                0x00000000       0x44 ./uart/uart_hal.o
+                0x00000000       0x44 ./build/./uart/uart_hal.o
  .text.get_clk_div
-                0x00000000       0x4c ./uart/uart_hal.o
+                0x00000000       0x4c ./build/./uart/uart_hal.o
  .text.hal_uart_read_byte
-                0x00000000       0x24 ./uart/uart_hal.o
- .debug_macro   0x00000000      0x82c ./uart/uart_hal.o
- .debug_macro   0x00000000       0x22 ./uart/uart_hal.o
- .debug_macro   0x00000000       0x8e ./uart/uart_hal.o
- .debug_macro   0x00000000       0x51 ./uart/uart_hal.o
- .debug_macro   0x00000000      0x103 ./uart/uart_hal.o
- .debug_macro   0x00000000       0x6a ./uart/uart_hal.o
- .debug_macro   0x00000000      0x1df ./uart/uart_hal.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port.o
- .text          0x00000000        0x0 ./bare_metal_port/port.o
- .data          0x00000000        0x0 ./bare_metal_port/port.o
- .bss           0x00000000        0x0 ./bare_metal_port/port.o
+                0x00000000       0x24 ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000      0x82c ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000       0x22 ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000       0x8e ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000       0x51 ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000      0x103 ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000       0x6a ./build/./uart/uart_hal.o
+ .debug_macro   0x00000000      0x1df ./build/./uart/uart_hal.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port.o
+ .text          0x00000000        0x0 ./build/./bare_metal_port/port.o
+ .data          0x00000000        0x0 ./build/./bare_metal_port/port.o
+ .bss           0x00000000        0x0 ./build/./bare_metal_port/port.o
  .text.vPortEndScheduler
-                0x00000000        0x4 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x82c ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x1a5 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x22 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x8e ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x51 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x103 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x6a ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x1df ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x16 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x76 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x34 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x182 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0xce ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x3a ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x1f ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x12 ./bare_metal_port/port.o
- .debug_macro   0x00000000     0x116e ./bare_metal_port/port.o
- .debug_macro   0x00000000       0xc3 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x161 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x6e ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x19 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x3b ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x34 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x364 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x16 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x4a ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x34 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x10 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x58 ./bare_metal_port/port.o
- .debug_macro   0x00000000      0x1e5 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x10 ./bare_metal_port/port.o
- .debug_macro   0x00000000       0x3c ./bare_metal_port/port.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./bare_metal_port/port_systimer.o
- .text          0x00000000        0x0 ./bare_metal_port/port_systimer.o
- .data          0x00000000        0x0 ./bare_metal_port/port_systimer.o
- .bss           0x00000000        0x0 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000      0x82c ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x22 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x8e ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x51 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000      0x103 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x6a ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000      0x1df ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000      0x1a5 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x16 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x76 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x34 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000      0x182 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0xce ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x3a ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x1f ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000       0x12 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00000000     0x116e ./bare_metal_port/port_systimer.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .text          0x00000000        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .data          0x00000000        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .bss           0x00000000        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000        0x4 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x82c ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x1a5 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x22 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x8e ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x51 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x103 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x6a ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x1df ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x16 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x76 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x34 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x182 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0xce ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x3a ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x1f ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x12 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000     0x116e ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0xc3 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x161 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x6e ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x19 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x3b ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x34 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x364 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x16 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x4a ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x34 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x10 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x58 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000      0x1e5 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x10 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00000000       0x3c ./build/./bare_metal_port/port.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./bare_metal_port/port_systimer.o
+ .text          0x00000000        0x0 ./build/./bare_metal_port/port_systimer.o
+ .data          0x00000000        0x0 ./build/./bare_metal_port/port_systimer.o
+ .bss           0x00000000        0x0 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000      0x82c ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x22 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x8e ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x51 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000      0x103 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x6a ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000      0x1df ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000      0x1a5 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x16 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x76 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x34 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000      0x182 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0xce ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x3a ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x1f ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000       0x12 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00000000     0x116e ./build/./bare_metal_port/port_systimer.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .text          0x00000000        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .data          0x00000000        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .bss           0x00000000        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.xPortGetFreeHeapSize
-                0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.xPortGetMinimumEverFreeHeapSize
-                0x00000000        0xc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000        0xc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.xPortResetHeapMinimumEverFreeHeapSize
-                0x00000000       0x14 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000       0x14 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.vPortInitialiseBlocks
-                0x00000000        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.pvPortCalloc
-                0x00000000       0x64 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000       0x64 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.vPortGetHeapStats
-                0x00000000       0xf0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000       0xf0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .text.vPortHeapResetState
-                0x00000000       0x2c ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x82c ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x19 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x22 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x68 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x94 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x3b ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x11c ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0xb0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x57 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x364 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x4a ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x10 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x58 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x1e5 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x29 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x3c ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x103 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x6a ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x1df ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x16 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x76 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x34 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x182 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0xce ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x3a ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x1f ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0x12 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000     0x116e ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000       0xc3 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000      0x161 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .group         0x00000000        0xc main.o
- .text          0x00000000        0x0 main.o
- .data          0x00000000        0x0 main.o
- .bss           0x00000000        0x0 main.o
- .debug_macro   0x00000000      0x82c main.o
- .debug_macro   0x00000000      0x1a5 main.o
- .debug_macro   0x00000000       0x22 main.o
- .debug_macro   0x00000000       0x8e main.o
- .debug_macro   0x00000000       0x51 main.o
- .debug_macro   0x00000000      0x103 main.o
- .debug_macro   0x00000000       0x6a main.o
- .debug_macro   0x00000000      0x1df main.o
- .debug_macro   0x00000000       0x16 main.o
- .debug_macro   0x00000000       0x76 main.o
- .debug_macro   0x00000000       0x34 main.o
- .debug_macro   0x00000000      0x182 main.o
- .debug_macro   0x00000000       0xce main.o
- .debug_macro   0x00000000       0x3a main.o
- .debug_macro   0x00000000       0x1f main.o
- .debug_macro   0x00000000       0x12 main.o
- .debug_macro   0x00000000     0x116e main.o
- .debug_macro   0x00000000       0xc3 main.o
- .debug_macro   0x00000000      0x161 main.o
- .debug_macro   0x00000000       0x16 main.o
+                0x00000000       0x2c ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x82c ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x19 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x22 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x68 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x94 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x3b ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x11c ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0xb0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x57 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x364 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x4a ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x10 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x58 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x1e5 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x29 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x3c ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x103 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x6a ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x1df ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x16 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x76 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x34 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x182 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0xce ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x3a ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x1f ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0x12 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000     0x116e ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000       0xc3 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000      0x161 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .group         0x00000000        0xc ./build/main.o
+ .text          0x00000000        0x0 ./build/main.o
+ .data          0x00000000        0x0 ./build/main.o
+ .bss           0x00000000        0x0 ./build/main.o
+ .debug_macro   0x00000000      0x82c ./build/main.o
+ .debug_macro   0x00000000      0x1a5 ./build/main.o
+ .debug_macro   0x00000000       0x22 ./build/main.o
+ .debug_macro   0x00000000       0x8e ./build/main.o
+ .debug_macro   0x00000000       0x51 ./build/main.o
+ .debug_macro   0x00000000      0x103 ./build/main.o
+ .debug_macro   0x00000000       0x6a ./build/main.o
+ .debug_macro   0x00000000      0x1df ./build/main.o
+ .debug_macro   0x00000000       0x16 ./build/main.o
+ .debug_macro   0x00000000       0x76 ./build/main.o
+ .debug_macro   0x00000000       0x34 ./build/main.o
+ .debug_macro   0x00000000      0x182 ./build/main.o
+ .debug_macro   0x00000000       0xce ./build/main.o
+ .debug_macro   0x00000000       0x3a ./build/main.o
+ .debug_macro   0x00000000       0x1f ./build/main.o
+ .debug_macro   0x00000000       0x12 ./build/main.o
+ .debug_macro   0x00000000     0x116e ./build/main.o
+ .debug_macro   0x00000000       0xc3 ./build/main.o
+ .debug_macro   0x00000000      0x161 ./build/main.o
+ .debug_macro   0x00000000       0x16 ./build/main.o
  .data          0x00000000        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memset.o)
  .bss           0x00000000        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memset.o)
  .text          0x00000000        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memcpy.o)
@@ -1067,20 +1067,20 @@ dram             0x3fc88000         0x00020000         rw
 
 Linker script and memory map
 
-LOAD ./bare_metal_port/port_asm.o
-LOAD ./mdk/boot.o
-LOAD ./FreeRTOS-Kernel/tasks.o
-LOAD ./FreeRTOS-Kernel/list.o
-LOAD ./FreeRTOS-Kernel/queue.o
-LOAD ./FreeRTOS-Kernel/timers.o
-LOAD ./FreeRTOS-Kernel/event_groups.o
-LOAD ./FreeRTOS-Kernel/stream_buffer.o
-LOAD ./FreeRTOS-Kernel/croutine.o
-LOAD ./uart/uart_hal.o
-LOAD ./bare_metal_port/port.o
-LOAD ./bare_metal_port/port_systimer.o
-LOAD ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
-LOAD main.o
+LOAD ./build/./bare_metal_port/port_asm.o
+LOAD ./build/./mdk/boot.o
+LOAD ./build/./FreeRTOS-Kernel/tasks.o
+LOAD ./build/./FreeRTOS-Kernel/list.o
+LOAD ./build/./FreeRTOS-Kernel/queue.o
+LOAD ./build/./FreeRTOS-Kernel/timers.o
+LOAD ./build/./FreeRTOS-Kernel/event_groups.o
+LOAD ./build/./FreeRTOS-Kernel/stream_buffer.o
+LOAD ./build/./FreeRTOS-Kernel/croutine.o
+LOAD ./build/./uart/uart_hal.o
+LOAD ./build/./bare_metal_port/port.o
+LOAD ./build/./bare_metal_port/port_systimer.o
+LOAD ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+LOAD ./build/main.o
 LOAD /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a
 LOAD /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a
 LOAD /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a
@@ -1100,81 +1100,81 @@ END GROUP
 .text           0x40380400     0x1810
                 0x40380400                        . = ALIGN (0x100)
  *(.vectors)
- .vectors       0x40380400       0x80 ./mdk/boot.o
+ .vectors       0x40380400       0x80 ./build/./mdk/boot.o
                 0x40380400                _vector_table
  *(.text)
- .text          0x40380480       0x14 ./mdk/boot.o
+ .text          0x40380480       0x14 ./build/./mdk/boot.o
                 0x40380480                _reset
  .text          0x40380494       0xa8 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memset.o)
                 0x40380494                memset
  *(.text*)
- .text._start   0x4038053c       0xd4 ./mdk/boot.o
+ .text._start   0x4038053c       0xd4 ./build/./mdk/boot.o
                 0x4038053c                _start
  .text.prvIdleTask
-                0x40380610       0x1c ./FreeRTOS-Kernel/tasks.o
+                0x40380610       0x1c ./build/./FreeRTOS-Kernel/tasks.o
  .text.prvAddCurrentTaskToDelayedList.isra.0
-                0x4038062c       0xfc ./FreeRTOS-Kernel/tasks.o
+                0x4038062c       0xfc ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskIncrementTick.part.0
-                0x40380728      0x21c ./FreeRTOS-Kernel/tasks.o
+                0x40380728      0x21c ./build/./FreeRTOS-Kernel/tasks.o
  .text.xTaskCreate
-                0x40380944      0x2cc ./FreeRTOS-Kernel/tasks.o
+                0x40380944      0x2cc ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380944                xTaskCreate
  .text.vTaskStartScheduler
-                0x40380c10       0x80 ./FreeRTOS-Kernel/tasks.o
+                0x40380c10       0x80 ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380c10                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x40380c90       0x14 ./FreeRTOS-Kernel/tasks.o
+                0x40380c90       0x14 ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380c90                vTaskSuspendAll
  .text.xTaskResumeAll
-                0x40380ca4      0x28c ./FreeRTOS-Kernel/tasks.o
+                0x40380ca4      0x28c ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380ca4                xTaskResumeAll
  .text.vTaskDelay
-                0x40380f30       0x40 ./FreeRTOS-Kernel/tasks.o
+                0x40380f30       0x40 ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380f30                vTaskDelay
  .text.xTaskIncrementTick
-                0x40380f70       0x28 ./FreeRTOS-Kernel/tasks.o
+                0x40380f70       0x28 ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380f70                xTaskIncrementTick
  .text.vTaskSwitchContext
-                0x40380f98       0x94 ./FreeRTOS-Kernel/tasks.o
+                0x40380f98       0x94 ./build/./FreeRTOS-Kernel/tasks.o
                 0x40380f98                vTaskSwitchContext
  .text.vListInitialise
-                0x4038102c       0x20 ./FreeRTOS-Kernel/list.o
+                0x4038102c       0x20 ./build/./FreeRTOS-Kernel/list.o
                 0x4038102c                vListInitialise
  .text.vListInitialiseItem
-                0x4038104c        0x8 ./FreeRTOS-Kernel/list.o
+                0x4038104c        0x8 ./build/./FreeRTOS-Kernel/list.o
                 0x4038104c                vListInitialiseItem
  .text.vListInsert
-                0x40381054       0x50 ./FreeRTOS-Kernel/list.o
+                0x40381054       0x50 ./build/./FreeRTOS-Kernel/list.o
                 0x40381054                vListInsert
  .text.uxListRemove
-                0x403810a4       0x48 ./FreeRTOS-Kernel/list.o
+                0x403810a4       0x48 ./build/./FreeRTOS-Kernel/list.o
                 0x403810a4                uxListRemove
  .text.hal_uart_init
-                0x403810ec      0x268 ./uart/uart_hal.o
+                0x403810ec      0x268 ./build/./uart/uart_hal.o
                 0x403810ec                hal_uart_init
  .text.hal_gpio_uart_setup
-                0x40381354       0x50 ./uart/uart_hal.o
+                0x40381354       0x50 ./build/./uart/uart_hal.o
                 0x40381354                hal_gpio_uart_setup
  .text.hal_uart_write_byte
-                0x403813a4       0x18 ./uart/uart_hal.o
+                0x403813a4       0x18 ./build/./uart/uart_hal.o
                 0x403813a4                hal_uart_write_byte
  .text.xPortStartScheduler
-                0x403813bc       0x20 ./bare_metal_port/port.o
+                0x403813bc       0x20 ./build/./bare_metal_port/port.o
                 0x403813bc                xPortStartScheduler
  .text.portSetupSystimerInterrupt
-                0x403813dc      0x100 ./bare_metal_port/port_systimer.o
+                0x403813dc      0x100 ./build/./bare_metal_port/port_systimer.o
                 0x403813dc                portSetupSystimerInterrupt
  .text.pvPortMalloc
-                0x403814dc      0x1dc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x403814dc      0x1dc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
                 0x403814dc                pvPortMalloc
  .text.vPortFree
-                0x403816b8       0xfc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x403816b8       0xfc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
                 0x403816b8                vPortFree
  .text.uart_task
-                0x403817b4       0x2c main.o
+                0x403817b4       0x2c ./build/main.o
                 0x403817b4                uart_task
  .text.startup.main
-                0x403817e0       0x54 main.o
+                0x403817e0       0x54 ./build/main.o
                 0x403817e0                main
  .text.__clzsi2
                 0x40381834       0x6e /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clzsi2.o)
@@ -1184,7 +1184,7 @@ END GROUP
                 0x403818a2                __udivdi3
 
 .iram           0x40381d00      0x828
- .iram          0x40381d00      0x828 ./bare_metal_port/port_asm.o
+ .iram          0x40381d00      0x828 ./build/./bare_metal_port/port_asm.o
                 0x40381d00                pxPortInitialiseStack
                 0x40381d40                xPortStartFirstTask
                 0x40381de0                freertos_risc_v_application_exception_handler
@@ -1195,11 +1195,11 @@ END GROUP
                 0x40382300                freertos_risc_v_trap_handler
 
 .rela.dyn       0x40382528        0x0
- .rela.text     0x40382528        0x0 ./bare_metal_port/port_asm.o
+ .rela.text     0x40382528        0x0 ./build/./bare_metal_port/port_asm.o
  .rela.text._start
-                0x40382528        0x0 ./bare_metal_port/port_asm.o
+                0x40382528        0x0 ./build/./bare_metal_port/port_asm.o
  .rela.srodata.xISRStackTop
-                0x40382528        0x0 ./bare_metal_port/port_asm.o
+                0x40382528        0x0 ./build/./bare_metal_port/port_asm.o
 
 .data           0x3fc88000      0x430
                 0x3fc88000                        . = ALIGN (0x10)
@@ -1210,22 +1210,22 @@ END GROUP
  *(.sdata)
  *(.sdata*)
  .sdata.pxCriticalNesting
-                0x3fc88000        0x4 ./bare_metal_port/port.o
+                0x3fc88000        0x4 ./build/./bare_metal_port/port.o
                 0x3fc88000                pxCriticalNesting
  .sdata.xCriticalNesting
-                0x3fc88004        0x4 ./bare_metal_port/port.o
+                0x3fc88004        0x4 ./build/./bare_metal_port/port.o
                 0x3fc88004                xCriticalNesting
  *(.srodata)
  *(.srodata*)
  .srodata.uxTopUsedPriority
-                0x3fc88008        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc88008        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .srodata.xISRStackTop
-                0x3fc8800c        0x4 ./bare_metal_port/port.o
+                0x3fc8800c        0x4 ./build/./bare_metal_port/port.o
                 0x3fc8800c                xISRStackTop
  *(.rodata)
  *(.rodata*)
  .rodata.main.str1.4
-                0x3fc88010        0xa main.o
+                0x3fc88010        0xa ./build/main.o
  *fill*         0x3fc8801a        0x2 
  .rodata.__clz_tab
                 0x3fc8801c      0x100 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clz.o)
@@ -1234,23 +1234,23 @@ END GROUP
  *(.rodata1)
  *(.riscv.*)
  .riscv.attributes
-                0x3fc8811c       0x35 ./bare_metal_port/port_asm.o
+                0x3fc8811c       0x35 ./build/./bare_metal_port/port_asm.o
  .riscv.attributes
-                0x3fc88151       0x37 ./mdk/boot.o
+                0x3fc88151       0x37 ./build/./mdk/boot.o
  .riscv.attributes
-                0x3fc88188       0x37 ./FreeRTOS-Kernel/tasks.o
+                0x3fc88188       0x37 ./build/./FreeRTOS-Kernel/tasks.o
  .riscv.attributes
-                0x3fc881bf       0x33 ./FreeRTOS-Kernel/list.o
+                0x3fc881bf       0x33 ./build/./FreeRTOS-Kernel/list.o
  .riscv.attributes
-                0x3fc881f2       0x33 ./uart/uart_hal.o
+                0x3fc881f2       0x33 ./build/./uart/uart_hal.o
  .riscv.attributes
-                0x3fc88225       0x33 ./bare_metal_port/port.o
+                0x3fc88225       0x33 ./build/./bare_metal_port/port.o
  .riscv.attributes
-                0x3fc88258       0x37 ./bare_metal_port/port_systimer.o
+                0x3fc88258       0x37 ./build/./bare_metal_port/port_systimer.o
  .riscv.attributes
-                0x3fc8828f       0x37 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x3fc8828f       0x37 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .riscv.attributes
-                0x3fc882c6       0x33 main.o
+                0x3fc882c6       0x33 ./build/main.o
  .riscv.attributes
                 0x3fc882f9       0x4c /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/libc.a(libc_a-memset.o)
  .riscv.attributes
@@ -1269,269 +1269,269 @@ END GROUP
  *(.bss)
  *(.bss*)
  .bss.xPendingReadyList
-                0x3fc88430       0x14 ./FreeRTOS-Kernel/tasks.o
+                0x3fc88430       0x14 ./build/./FreeRTOS-Kernel/tasks.o
  .bss.xDelayedTaskList2
-                0x3fc88444       0x14 ./FreeRTOS-Kernel/tasks.o
+                0x3fc88444       0x14 ./build/./FreeRTOS-Kernel/tasks.o
  .bss.xDelayedTaskList1
-                0x3fc88458       0x14 ./FreeRTOS-Kernel/tasks.o
+                0x3fc88458       0x14 ./build/./FreeRTOS-Kernel/tasks.o
  .bss.pxReadyTasksLists
-                0x3fc8846c       0x64 ./FreeRTOS-Kernel/tasks.o
- .bss.ucHeap    0x3fc884d0     0xa000 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .bss.cfg.0     0x3fc924d0       0x18 main.o
+                0x3fc8846c       0x64 ./build/./FreeRTOS-Kernel/tasks.o
+ .bss.ucHeap    0x3fc884d0     0xa000 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .bss.cfg.0     0x3fc924d0       0x18 ./build/main.o
  *(.sbss)
  *(.sbss*)
  .sbss.uxSchedulerSuspended
-                0x3fc924e8        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924e8        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xIdleTaskHandles
-                0x3fc924ec        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924ec        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xNextTaskUnblockTime
-                0x3fc924f0        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924f0        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.uxTaskNumber
-                0x3fc924f4        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924f4        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xNumOfOverflows
-                0x3fc924f8        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924f8        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xYieldPendings
-                0x3fc924fc        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc924fc        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xPendedTicks
-                0x3fc92500        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92500        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xSchedulerRunning
-                0x3fc92504        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92504        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.uxTopReadyPriority
-                0x3fc92508        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92508        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.xTickCount
-                0x3fc9250c        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc9250c        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.uxCurrentNumberOfTasks
-                0x3fc92510        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92510        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.pxOverflowDelayedTaskList
-                0x3fc92514        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92514        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.pxDelayedTaskList
-                0x3fc92518        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc92518        0x4 ./build/./FreeRTOS-Kernel/tasks.o
  .sbss.pxCurrentTCB
-                0x3fc9251c        0x4 ./FreeRTOS-Kernel/tasks.o
+                0x3fc9251c        0x4 ./build/./FreeRTOS-Kernel/tasks.o
                 0x3fc9251c                pxCurrentTCB
  .sbss.xTaskReturnAddress
-                0x3fc92520        0x4 ./bare_metal_port/port.o
+                0x3fc92520        0x4 ./build/./bare_metal_port/port.o
                 0x3fc92520                xTaskReturnAddress
  .sbss.xNumberOfSuccessfulFrees
-                0x3fc92524        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x3fc92524        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .sbss.xNumberOfSuccessfulAllocations
-                0x3fc92528        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x3fc92528        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .sbss.xMinimumEverFreeBytesRemaining
-                0x3fc9252c        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x3fc9252c        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .sbss.xFreeBytesRemaining
-                0x3fc92530        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .sbss.pxEnd    0x3fc92534        0x4 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .sbss.xStart   0x3fc92538        0x8 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x3fc92530        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .sbss.pxEnd    0x3fc92534        0x4 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .sbss.xStart   0x3fc92538        0x8 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  *(COMMON)
                 0x3fc92540                        . = ALIGN (0x10)
                 0x3fc92540                        _ebss = .
                 0x3fc92540                        . = ALIGN (0x10)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-OUTPUT(freertos_esp32c3.elf elf32-littleriscv)
+OUTPUT(build/freertos_esp32c3.elf elf32-littleriscv)
 
 .debug_line     0x00000000     0x5892
- .debug_line    0x00000000      0x2bb ./bare_metal_port/port_asm.o
- .debug_line    0x000002bb      0x267 ./mdk/boot.o
- .debug_line    0x00000522     0x37a6 ./FreeRTOS-Kernel/tasks.o
- .debug_line    0x00003cc8      0x44b ./FreeRTOS-Kernel/list.o
- .debug_line    0x00004113      0x654 ./uart/uart_hal.o
- .debug_line    0x00004767      0x151 ./bare_metal_port/port.o
- .debug_line    0x000048b8      0x230 ./bare_metal_port/port_systimer.o
- .debug_line    0x00004ae8      0xbd8 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_line    0x000056c0      0x1d2 main.o
+ .debug_line    0x00000000      0x2bb ./build/./bare_metal_port/port_asm.o
+ .debug_line    0x000002bb      0x267 ./build/./mdk/boot.o
+ .debug_line    0x00000522     0x37a6 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_line    0x00003cc8      0x44b ./build/./FreeRTOS-Kernel/list.o
+ .debug_line    0x00004113      0x654 ./build/./uart/uart_hal.o
+ .debug_line    0x00004767      0x151 ./build/./bare_metal_port/port.o
+ .debug_line    0x000048b8      0x230 ./build/./bare_metal_port/port_systimer.o
+ .debug_line    0x00004ae8      0xbd8 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_line    0x000056c0      0x1d2 ./build/main.o
 
 .debug_line_str
                 0x00000000      0x406
  .debug_line_str
-                0x00000000      0x406 ./bare_metal_port/port_asm.o
+                0x00000000      0x406 ./build/./bare_metal_port/port_asm.o
                                  0x44 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./mdk/boot.o
+                0x00000406        0x0 ./build/./mdk/boot.o
                                 0x240 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./FreeRTOS-Kernel/tasks.o
+                0x00000406        0x0 ./build/./FreeRTOS-Kernel/tasks.o
                                 0x2ed (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./FreeRTOS-Kernel/list.o
+                0x00000406        0x0 ./build/./FreeRTOS-Kernel/list.o
                                 0x2a4 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./uart/uart_hal.o
+                0x00000406        0x0 ./build/./uart/uart_hal.o
                                 0x1c1 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./bare_metal_port/port.o
+                0x00000406        0x0 ./build/./bare_metal_port/port.o
                                 0x2b6 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./bare_metal_port/port_systimer.o
+                0x00000406        0x0 ./build/./bare_metal_port/port_systimer.o
                                 0x26f (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000406        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
                                 0x2f9 (size before relaxing)
  .debug_line_str
-                0x00000406        0x0 main.o
+                0x00000406        0x0 ./build/main.o
                                 0x23f (size before relaxing)
 
 .debug_info     0x00000000     0x33d1
- .debug_info    0x00000000       0x25 ./bare_metal_port/port_asm.o
- .debug_info    0x00000025      0x155 ./mdk/boot.o
- .debug_info    0x0000017a     0x1e28 ./FreeRTOS-Kernel/tasks.o
- .debug_info    0x00001fa2      0x2c3 ./FreeRTOS-Kernel/list.o
- .debug_info    0x00002265      0x579 ./uart/uart_hal.o
- .debug_info    0x000027de      0x1a4 ./bare_metal_port/port.o
- .debug_info    0x00002982       0xc2 ./bare_metal_port/port_systimer.o
- .debug_info    0x00002a44      0x622 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_info    0x00003066      0x36b main.o
+ .debug_info    0x00000000       0x25 ./build/./bare_metal_port/port_asm.o
+ .debug_info    0x00000025      0x155 ./build/./mdk/boot.o
+ .debug_info    0x0000017a     0x1e28 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_info    0x00001fa2      0x2c3 ./build/./FreeRTOS-Kernel/list.o
+ .debug_info    0x00002265      0x579 ./build/./uart/uart_hal.o
+ .debug_info    0x000027de      0x1a4 ./build/./bare_metal_port/port.o
+ .debug_info    0x00002982       0xc2 ./build/./bare_metal_port/port_systimer.o
+ .debug_info    0x00002a44      0x622 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_info    0x00003066      0x36b ./build/main.o
 
 .debug_abbrev   0x00000000      0xea2
- .debug_abbrev  0x00000000       0x14 ./bare_metal_port/port_asm.o
- .debug_abbrev  0x00000014      0x11b ./mdk/boot.o
- .debug_abbrev  0x0000012f      0x4a7 ./FreeRTOS-Kernel/tasks.o
- .debug_abbrev  0x000005d6      0x10b ./FreeRTOS-Kernel/list.o
- .debug_abbrev  0x000006e1      0x1e1 ./uart/uart_hal.o
- .debug_abbrev  0x000008c2       0xe5 ./bare_metal_port/port.o
- .debug_abbrev  0x000009a7       0x6b ./bare_metal_port/port_systimer.o
- .debug_abbrev  0x00000a12      0x2e0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_abbrev  0x00000cf2      0x1b0 main.o
+ .debug_abbrev  0x00000000       0x14 ./build/./bare_metal_port/port_asm.o
+ .debug_abbrev  0x00000014      0x11b ./build/./mdk/boot.o
+ .debug_abbrev  0x0000012f      0x4a7 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_abbrev  0x000005d6      0x10b ./build/./FreeRTOS-Kernel/list.o
+ .debug_abbrev  0x000006e1      0x1e1 ./build/./uart/uart_hal.o
+ .debug_abbrev  0x000008c2       0xe5 ./build/./bare_metal_port/port.o
+ .debug_abbrev  0x000009a7       0x6b ./build/./bare_metal_port/port_systimer.o
+ .debug_abbrev  0x00000a12      0x2e0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_abbrev  0x00000cf2      0x1b0 ./build/main.o
 
 .debug_aranges  0x00000000      0x2e8
  .debug_aranges
-                0x00000000       0x20 ./bare_metal_port/port_asm.o
+                0x00000000       0x20 ./build/./bare_metal_port/port_asm.o
  .debug_aranges
-                0x00000020       0x20 ./mdk/boot.o
+                0x00000020       0x20 ./build/./mdk/boot.o
  .debug_aranges
-                0x00000040      0x150 ./FreeRTOS-Kernel/tasks.o
+                0x00000040      0x150 ./build/./FreeRTOS-Kernel/tasks.o
  .debug_aranges
-                0x00000190       0x40 ./FreeRTOS-Kernel/list.o
+                0x00000190       0x40 ./build/./FreeRTOS-Kernel/list.o
  .debug_aranges
-                0x000001d0       0x48 ./uart/uart_hal.o
+                0x000001d0       0x48 ./build/./uart/uart_hal.o
  .debug_aranges
-                0x00000218       0x28 ./bare_metal_port/port.o
+                0x00000218       0x28 ./build/./bare_metal_port/port.o
  .debug_aranges
-                0x00000240       0x20 ./bare_metal_port/port_systimer.o
+                0x00000240       0x20 ./build/./bare_metal_port/port_systimer.o
  .debug_aranges
-                0x00000260       0x60 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000260       0x60 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .debug_aranges
-                0x000002c0       0x28 main.o
+                0x000002c0       0x28 ./build/main.o
 
 .debug_str      0x00000000    0x14f5b
- .debug_str     0x00000000    0x14f5b ./bare_metal_port/port_asm.o
+ .debug_str     0x00000000    0x14f5b ./build/./bare_metal_port/port_asm.o
                                  0x50 (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./mdk/boot.o
+ .debug_str     0x00014f5b        0x0 ./build/./mdk/boot.o
                                0x752e (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./FreeRTOS-Kernel/tasks.o
+ .debug_str     0x00014f5b        0x0 ./build/./FreeRTOS-Kernel/tasks.o
                               0x13294 (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./FreeRTOS-Kernel/list.o
+ .debug_str     0x00014f5b        0x0 ./build/./FreeRTOS-Kernel/list.o
                                0xfeff (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./uart/uart_hal.o
+ .debug_str     0x00014f5b        0x0 ./build/./uart/uart_hal.o
                                0x3e30 (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./bare_metal_port/port.o
+ .debug_str     0x00014f5b        0x0 ./build/./bare_metal_port/port.o
                               0x112d1 (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./bare_metal_port/port_systimer.o
+ .debug_str     0x00014f5b        0x0 ./build/./bare_metal_port/port_systimer.o
                                0xcd14 (size before relaxing)
- .debug_str     0x00014f5b        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_str     0x00014f5b        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
                               0x11aa1 (size before relaxing)
- .debug_str     0x00014f5b        0x0 main.o
+ .debug_str     0x00014f5b        0x0 ./build/main.o
                                0xe8c2 (size before relaxing)
 
 .debug_rnglists
                 0x00000000      0x5d2
  .debug_rnglists
-                0x00000000       0x41 ./mdk/boot.o
+                0x00000000       0x41 ./build/./mdk/boot.o
  .debug_rnglists
-                0x00000041      0x476 ./FreeRTOS-Kernel/tasks.o
+                0x00000041      0x476 ./build/./FreeRTOS-Kernel/tasks.o
  .debug_rnglists
-                0x000004b7       0x2b ./FreeRTOS-Kernel/list.o
+                0x000004b7       0x2b ./build/./FreeRTOS-Kernel/list.o
  .debug_rnglists
-                0x000004e2       0x43 ./uart/uart_hal.o
+                0x000004e2       0x43 ./build/./uart/uart_hal.o
  .debug_rnglists
-                0x00000525       0x19 ./bare_metal_port/port.o
+                0x00000525       0x19 ./build/./bare_metal_port/port.o
  .debug_rnglists
-                0x0000053e       0x14 ./bare_metal_port/port_systimer.o
+                0x0000053e       0x14 ./build/./bare_metal_port/port_systimer.o
  .debug_rnglists
-                0x00000552       0x67 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000552       0x67 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .debug_rnglists
-                0x000005b9       0x19 main.o
+                0x000005b9       0x19 ./build/main.o
 
 .debug_macro    0x00000000     0x4145
- .debug_macro   0x00000000      0x1a2 ./mdk/boot.o
- .debug_macro   0x000001a2      0x82c ./mdk/boot.o
- .debug_macro   0x000009ce       0x5f ./mdk/boot.o
- .debug_macro   0x00000a2d       0x10 ./mdk/boot.o
- .debug_macro   0x00000a3d       0x22 ./mdk/boot.o
- .debug_macro   0x00000a5f       0x8e ./mdk/boot.o
- .debug_macro   0x00000aed       0x51 ./mdk/boot.o
- .debug_macro   0x00000b3e      0x103 ./mdk/boot.o
- .debug_macro   0x00000c41       0x6a ./mdk/boot.o
- .debug_macro   0x00000cab      0x1df ./mdk/boot.o
- .debug_macro   0x00000e8a       0x6e ./mdk/boot.o
- .debug_macro   0x00000ef8       0x19 ./mdk/boot.o
- .debug_macro   0x00000f11       0x3b ./mdk/boot.o
- .debug_macro   0x00000f4c       0x34 ./mdk/boot.o
- .debug_macro   0x00000f80       0x16 ./mdk/boot.o
- .debug_macro   0x00000f96       0x9e ./mdk/boot.o
- .debug_macro   0x00001034      0x364 ./mdk/boot.o
- .debug_macro   0x00001398      0x127 ./mdk/boot.o
- .debug_macro   0x000014bf       0x16 ./mdk/boot.o
- .debug_macro   0x000014d5       0x4a ./mdk/boot.o
- .debug_macro   0x0000151f       0x34 ./mdk/boot.o
- .debug_macro   0x00001553       0x10 ./mdk/boot.o
- .debug_macro   0x00001563       0x58 ./mdk/boot.o
- .debug_macro   0x000015bb      0x1e5 ./mdk/boot.o
- .debug_macro   0x000017a0       0x16 ./mdk/boot.o
- .debug_macro   0x000017b6       0x16 ./mdk/boot.o
- .debug_macro   0x000017cc      0x170 ./mdk/boot.o
- .debug_macro   0x0000193c       0x16 ./mdk/boot.o
- .debug_macro   0x00001952       0x3c ./mdk/boot.o
- .debug_macro   0x0000198e       0x16 ./mdk/boot.o
- .debug_macro   0x000019a4       0x29 ./mdk/boot.o
- .debug_macro   0x000019cd       0x16 ./mdk/boot.o
- .debug_macro   0x000019e3      0x11a ./mdk/boot.o
- .debug_macro   0x00001afd      0x2b8 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00001db5       0x68 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00001e1d       0x94 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00001eb1      0x11c ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00001fcd       0xb0 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x0000207d       0x57 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x000020d4       0x16 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x000020ea       0x76 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00002160       0x34 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00002194      0x182 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00002316       0xce ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x000023e4       0x3a ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x0000241e       0x1f ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x0000243d       0x12 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x0000244f     0x116e ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x000035bd       0xc3 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00003680      0x161 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x000037e1       0x98 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00003879       0x17 ./FreeRTOS-Kernel/tasks.o
- .debug_macro   0x00003890      0x193 ./FreeRTOS-Kernel/list.o
- .debug_macro   0x00003a23       0x7e ./uart/uart_hal.o
- .debug_macro   0x00003aa1       0x16 ./uart/uart_hal.o
- .debug_macro   0x00003ab7       0x22 ./uart/uart_hal.o
- .debug_macro   0x00003ad9       0x28 ./uart/uart_hal.o
- .debug_macro   0x00003b01      0x1b9 ./bare_metal_port/port.o
- .debug_macro   0x00003cba       0xe0 ./bare_metal_port/port_systimer.o
- .debug_macro   0x00003d9a       0x9a ./bare_metal_port/port_systimer.o
- .debug_macro   0x00003e34      0x229 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_macro   0x0000405d       0xe8 main.o
+ .debug_macro   0x00000000      0x1a2 ./build/./mdk/boot.o
+ .debug_macro   0x000001a2      0x82c ./build/./mdk/boot.o
+ .debug_macro   0x000009ce       0x5f ./build/./mdk/boot.o
+ .debug_macro   0x00000a2d       0x10 ./build/./mdk/boot.o
+ .debug_macro   0x00000a3d       0x22 ./build/./mdk/boot.o
+ .debug_macro   0x00000a5f       0x8e ./build/./mdk/boot.o
+ .debug_macro   0x00000aed       0x51 ./build/./mdk/boot.o
+ .debug_macro   0x00000b3e      0x103 ./build/./mdk/boot.o
+ .debug_macro   0x00000c41       0x6a ./build/./mdk/boot.o
+ .debug_macro   0x00000cab      0x1df ./build/./mdk/boot.o
+ .debug_macro   0x00000e8a       0x6e ./build/./mdk/boot.o
+ .debug_macro   0x00000ef8       0x19 ./build/./mdk/boot.o
+ .debug_macro   0x00000f11       0x3b ./build/./mdk/boot.o
+ .debug_macro   0x00000f4c       0x34 ./build/./mdk/boot.o
+ .debug_macro   0x00000f80       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x00000f96       0x9e ./build/./mdk/boot.o
+ .debug_macro   0x00001034      0x364 ./build/./mdk/boot.o
+ .debug_macro   0x00001398      0x127 ./build/./mdk/boot.o
+ .debug_macro   0x000014bf       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x000014d5       0x4a ./build/./mdk/boot.o
+ .debug_macro   0x0000151f       0x34 ./build/./mdk/boot.o
+ .debug_macro   0x00001553       0x10 ./build/./mdk/boot.o
+ .debug_macro   0x00001563       0x58 ./build/./mdk/boot.o
+ .debug_macro   0x000015bb      0x1e5 ./build/./mdk/boot.o
+ .debug_macro   0x000017a0       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x000017b6       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x000017cc      0x170 ./build/./mdk/boot.o
+ .debug_macro   0x0000193c       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x00001952       0x3c ./build/./mdk/boot.o
+ .debug_macro   0x0000198e       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x000019a4       0x29 ./build/./mdk/boot.o
+ .debug_macro   0x000019cd       0x16 ./build/./mdk/boot.o
+ .debug_macro   0x000019e3      0x11a ./build/./mdk/boot.o
+ .debug_macro   0x00001afd      0x2b8 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00001db5       0x68 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00001e1d       0x94 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00001eb1      0x11c ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00001fcd       0xb0 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x0000207d       0x57 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x000020d4       0x16 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x000020ea       0x76 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00002160       0x34 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00002194      0x182 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00002316       0xce ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x000023e4       0x3a ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x0000241e       0x1f ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x0000243d       0x12 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x0000244f     0x116e ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x000035bd       0xc3 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00003680      0x161 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x000037e1       0x98 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00003879       0x17 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_macro   0x00003890      0x193 ./build/./FreeRTOS-Kernel/list.o
+ .debug_macro   0x00003a23       0x7e ./build/./uart/uart_hal.o
+ .debug_macro   0x00003aa1       0x16 ./build/./uart/uart_hal.o
+ .debug_macro   0x00003ab7       0x22 ./build/./uart/uart_hal.o
+ .debug_macro   0x00003ad9       0x28 ./build/./uart/uart_hal.o
+ .debug_macro   0x00003b01      0x1b9 ./build/./bare_metal_port/port.o
+ .debug_macro   0x00003cba       0xe0 ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00003d9a       0x9a ./build/./bare_metal_port/port_systimer.o
+ .debug_macro   0x00003e34      0x229 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x0000405d       0xe8 ./build/main.o
 
 .comment        0x00000000       0x32
- .comment       0x00000000       0x32 ./mdk/boot.o
+ .comment       0x00000000       0x32 ./build/./mdk/boot.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./FreeRTOS-Kernel/tasks.o
+ .comment       0x00000032        0x0 ./build/./FreeRTOS-Kernel/tasks.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./FreeRTOS-Kernel/list.o
+ .comment       0x00000032        0x0 ./build/./FreeRTOS-Kernel/list.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./uart/uart_hal.o
+ .comment       0x00000032        0x0 ./build/./uart/uart_hal.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./bare_metal_port/port.o
+ .comment       0x00000032        0x0 ./build/./bare_metal_port/port.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./bare_metal_port/port_systimer.o
+ .comment       0x00000032        0x0 ./build/./bare_metal_port/port_systimer.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .comment       0x00000032        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
                                  0x33 (size before relaxing)
- .comment       0x00000032        0x0 main.o
+ .comment       0x00000032        0x0 ./build/main.o
                                  0x33 (size before relaxing)
  .comment       0x00000032        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clzsi2.o)
                                  0x33 (size before relaxing)
@@ -1543,21 +1543,21 @@ OUTPUT(freertos_esp32c3.elf elf32-littleriscv)
 .note.GNU-stack
                 0x00000000        0x0
  .note.GNU-stack
-                0x00000000        0x0 ./mdk/boot.o
+                0x00000000        0x0 ./build/./mdk/boot.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/tasks.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/tasks.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/list.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/list.o
  .note.GNU-stack
-                0x00000000        0x0 ./uart/uart_hal.o
+                0x00000000        0x0 ./build/./uart/uart_hal.o
  .note.GNU-stack
-                0x00000000        0x0 ./bare_metal_port/port.o
+                0x00000000        0x0 ./build/./bare_metal_port/port.o
  .note.GNU-stack
-                0x00000000        0x0 ./bare_metal_port/port_systimer.o
+                0x00000000        0x0 ./build/./bare_metal_port/port_systimer.o
  .note.GNU-stack
-                0x00000000        0x0 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x00000000        0x0 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .note.GNU-stack
-                0x00000000        0x0 main.o
+                0x00000000        0x0 ./build/main.o
  .note.GNU-stack
                 0x00000000        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clzsi2.o)
  .note.GNU-stack
@@ -1566,24 +1566,24 @@ OUTPUT(freertos_esp32c3.elf elf32-littleriscv)
                 0x00000000        0x0 /Users/lucabevivino/xpack_rv_gcc_15.2/bin/../lib/gcc/riscv-none-elf/15.2.0/libgcc.a(_clz.o)
 
 .debug_frame    0x00000000      0x684
- .debug_frame   0x00000000       0x28 ./mdk/boot.o
- .debug_frame   0x00000028      0x3d4 ./FreeRTOS-Kernel/tasks.o
- .debug_frame   0x000003fc       0x60 ./FreeRTOS-Kernel/list.o
- .debug_frame   0x0000045c       0x90 ./uart/uart_hal.o
- .debug_frame   0x000004ec       0x3c ./bare_metal_port/port.o
- .debug_frame   0x00000528       0x20 ./bare_metal_port/port_systimer.o
- .debug_frame   0x00000548       0xfc ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
- .debug_frame   0x00000644       0x40 main.o
+ .debug_frame   0x00000000       0x28 ./build/./mdk/boot.o
+ .debug_frame   0x00000028      0x3d4 ./build/./FreeRTOS-Kernel/tasks.o
+ .debug_frame   0x000003fc       0x60 ./build/./FreeRTOS-Kernel/list.o
+ .debug_frame   0x0000045c       0x90 ./build/./uart/uart_hal.o
+ .debug_frame   0x000004ec       0x3c ./build/./bare_metal_port/port.o
+ .debug_frame   0x00000528       0x20 ./build/./bare_metal_port/port_systimer.o
+ .debug_frame   0x00000548       0xfc ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+ .debug_frame   0x00000644       0x40 ./build/main.o
 
 .debug_loclists
                 0x00000000     0x1d17
  .debug_loclists
-                0x00000000     0x1683 ./FreeRTOS-Kernel/tasks.o
+                0x00000000     0x1683 ./build/./FreeRTOS-Kernel/tasks.o
  .debug_loclists
-                0x00001683       0x7c ./FreeRTOS-Kernel/list.o
+                0x00001683       0x7c ./build/./FreeRTOS-Kernel/list.o
  .debug_loclists
-                0x000016ff      0x17f ./uart/uart_hal.o
+                0x000016ff      0x17f ./build/./uart/uart_hal.o
  .debug_loclists
-                0x0000187e      0x463 ./FreeRTOS-Kernel/portable/MemMang/heap_4.o
+                0x0000187e      0x463 ./build/./FreeRTOS-Kernel/portable/MemMang/heap_4.o
  .debug_loclists
-                0x00001ce1       0x36 main.o
+                0x00001ce1       0x36 ./build/main.o

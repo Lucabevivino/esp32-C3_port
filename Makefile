@@ -1,4 +1,3 @@
-TARGET = freertos_esp32c3
 
 # Toolchain
 TOOLCHAIN_BIN = /Users/lucabevivino/xpack_rv_gcc_15.2/bin/
@@ -12,15 +11,19 @@ ESPTOOL = esptool.py
 PORT    = /dev/cu.usbmodem*
 BAUD    = 921600
 
-TARGET_ELF      = $(TARGET).elf
-TARGET_BIN      = $(TARGET).bin
 
 # Paths
 FREERTOS_DIR     = ./FreeRTOS-Kernel
 FREERTOS_PORT    = ./bare_metal_port
 FREERTOS_MEMMANG = $(FREERTOS_DIR)/portable/MemMang
+BUILD			 = ./build
 UART_DRIVER      = ./uart
 MDK              = ./mdk
+
+# Target
+TARGET 			= freertos_esp32c3
+TARGET_ELF      = $(BUILD)/$(TARGET).elf
+TARGET_BIN      = $(BUILD)/$(TARGET).bin
 
 # Headers
 INC_DIRS += -I. -I$(FREERTOS_DIR)/include -I$(FREERTOS_PORT) -I$(UART_DRIVER) -I$(MDK)
@@ -52,7 +55,7 @@ LDFLAGS = -T $(MDK)/linker_mdk.ld \
           -lc -lgcc
 
 # Object files
-OBJS = $(ASMS:.S=.o) $(SRCS:.c=.o)
+OBJS = $(ASMS:%.S=$(BUILD)/%.o) $(SRCS:%.c=$(BUILD)/%.o)
 
 .PHONY: all clean flash monitor debug
 
@@ -64,14 +67,14 @@ $(TARGET_ELF): $(OBJS)
 	@$(SIZE) $@
 
 $(TARGET_BIN): $(TARGET_ELF)
-	@echo "Generating Bin"
+	@echo "Generating Bin..."
 	@$(ESPTOOL) --chip esp32c3 elf2image --flash_mode dio --flash_freq 40m --flash_size 4MB -o $@ $<
 
 flash: $(TARGET_BIN)
 	@$(ESPTOOL) --chip esp32c3 --port $(PORT) --baud $(BAUD) write_flash 0x0 $(TARGET_BIN)
 
 run: $(TARGET_ELF)
-	@echo "Generazione immagine per RAM..."
+	@echo "Generating image for RAM..."
 	$(ESPTOOL) --chip esp32c3 elf2image --ram-only-header -o ram_image.bin $(TARGET_ELF)
 	@echo "Caricamento in RAM..."
 	$(ESPTOOL) --chip esp32c3 --port $(PORT) --baud $(BAUD) --no-stub load-ram ram_image.bin
@@ -84,10 +87,12 @@ monitor:
 	screen $(PORT) 115200
 
 clean:
-	@rm -f $(OBJS) $(TARGET_ELF) $(TARGET_BIN) output.map
+	@rm -r $(BUILD) output.map ram_image.bin
 
-%.o: %.c
+$(BUILD)/%.o: %.c
+	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-%.o: %.S
+$(BUILD)/%.o: %.S
+	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) -c $< -o $@
