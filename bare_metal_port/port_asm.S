@@ -60,25 +60,6 @@
 #include "portContext.h"
 #include "port_systimer_regs.h"
 
-/* Check the freertos_risc_v_chip_specific_extensions.h and/or command line
-definitions. */
-#if defined( portasmHAS_CLINT ) && defined( portasmHAS_MTIME )
-    #error The portasmHAS_CLINT constant has been deprecated.  Please replace it with portasmHAS_MTIME.  portasmHAS_CLINT and portasmHAS_MTIME cannot both be defined at once.  See https://www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html
-#endif
-
-#ifdef portasmHAS_CLINT
-    #warning The portasmHAS_CLINT constant has been deprecated.  Please replace it with portasmHAS_MTIME and portasmHAS_SIFIVE_CLINT.  For now portasmHAS_MTIME and portasmHAS_SIFIVE_CLINT are derived from portasmHAS_CLINT.  See https://www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html
-    #define portasmHAS_MTIME portasmHAS_CLINT
-    #define portasmHAS_SIFIVE_CLINT portasmHAS_CLINT
-#endif
-
-#ifndef portasmHAS_MTIME
-    #error freertos_risc_v_chip_specific_extensions.h must define portasmHAS_MTIME to either 1 (MTIME clock present) or 0 (MTIME clock not present).  See https://www.FreeRTOS.org/Using-FreeRTOS-on-RISC-V.html
-#endif
-
-#ifndef portasmHAS_SIFIVE_CLINT
-    #define portasmHAS_SIFIVE_CLINT 0
-#endif
 .section .iram, "ax"
 .global xPortStartFirstTask
 .global pxPortInitialiseStack
@@ -185,13 +166,6 @@ pxPortInitialiseStack:
 
     store_x x0, portCRITICAL_NESTING_OFFSET * portWORD_SIZE(a0)
 
-chip_specific_stack_frame:              /* First add any chip specific registers to the stack frame being created. */
-    beq t0, x0, 1f                      /* No more chip specific registers to save. */
-    addi a0, a0, -portWORD_SIZE         /* Make space for chip specific register. */
-    store_x x0, 0(a0)                   /* Give the chip specific register an initial value of zero. */
-    addi t0, t0, -1                     /* Decrement the count of chip specific registers remaining. */
-    j chip_specific_stack_frame         /* Until no more chip specific registers. */
-1:
     ret
 /*-----------------------------------------------------------*/
 
@@ -200,8 +174,6 @@ xPortStartFirstTask:
     load_x  sp, 0( sp )                 /* Read sp from first TCB member. */
 
     load_x  x1, 0( sp ) /* Note for starting the scheduler the exception return address is used as the function return address. */
-
-    portasmRESTORE_ADDITIONAL_REGISTERS /* Defined in freertos_risc_v_chip_specific_extensions.h to restore any registers unique to the RISC-V implementation. */
 
     load_x  x5, 1 * portWORD_SIZE( sp ) /* Initial mstatus into x5 (t0). */
     addi    x5, x5, 0x08                /* Set MIE bit so the first task starts with interrupts enabled - required as returns with ret not eret. */
@@ -216,7 +188,6 @@ xPortStartFirstTask:
     load_x  x13, 11 * portWORD_SIZE( sp )   /* a3 */
     load_x  x14, 12 * portWORD_SIZE( sp )   /* a4 */
     load_x  x15, 13 * portWORD_SIZE( sp )   /* a5 */
-#ifndef __riscv_32e
     load_x  x16, 14 * portWORD_SIZE( sp )   /* a6 */
     load_x  x17, 15 * portWORD_SIZE( sp )   /* a7 */
     load_x  x18, 16 * portWORD_SIZE( sp )   /* s2 */
@@ -233,7 +204,6 @@ xPortStartFirstTask:
     load_x  x29, 27 * portWORD_SIZE( sp )   /* t4 */
     load_x  x30, 28 * portWORD_SIZE( sp )   /* t5 */
     load_x  x31, 29 * portWORD_SIZE( sp )   /* t6 */
-#endif
 
     load_x  x5, portCRITICAL_NESTING_OFFSET * portWORD_SIZE( sp )    /* Obtain xCriticalNesting value for this task from task's stack. */
     load_x  x6, pxCriticalNesting           /* Load the address of xCriticalNesting into x6. */
