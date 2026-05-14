@@ -19,6 +19,7 @@ FREERTOS_MEMMANG = $(FREERTOS_DIR)/portable/MemMang
 BUILD			 = ./build
 UART_DRIVER      = ./uart
 MDK              = ./mdk
+COMMON			 = ./common
 
 # Target
 TARGET 			= freertos_esp32c3
@@ -26,7 +27,7 @@ TARGET_ELF      = $(BUILD)/$(TARGET).elf
 TARGET_BIN      = $(BUILD)/$(TARGET).bin
 
 # Headers
-INC_DIRS += -I. -I$(FREERTOS_DIR)/include -I$(FREERTOS_PORT) -I$(UART_DRIVER) -I$(MDK)
+INC_DIRS += -I. -I$(FREERTOS_DIR)/include -I$(FREERTOS_PORT) -I$(UART_DRIVER) -I$(MDK) -I$(COMMON)
 
 # Sources
 SRCS += $(MDK)/boot.c 

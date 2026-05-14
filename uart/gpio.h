@@ -1,20 +1,57 @@
+#include <stdint.h>
 
-//IO_MUX BASE ADDRESS
-#define DR_REG_IO_MUX_BASE 0x60009000
-
+/**
+ * @brief IO_MUX Register Layout Structure.
+ * 
+ * This structure represents the IO_MUX peripheral register map for the ESP32-C3.
+ * Each member corresponds to a pin configuration register, which controls 
+ * function selection, pull-up/down resistors, and drive strength.
+ * 
+ * @note The registers are mapped consecutively in memory starting from the base address.
+ *       Reference: ESP32-C3 Technical Reference Manual, IO_MUX Section.
+ */
 typedef struct {
-    volatile uint32_t gpio[22]; // L'ESP32-C3 ha 22 GPIO (0-21)
-} io_mux_dev_t;
+    volatile uint32_t gpio_0;
+    volatile uint32_t gpio_1;
+    volatile uint32_t gpio_2;
+    volatile uint32_t gpio_3;
+    volatile uint32_t gpio_4;
+    volatile uint32_t gpio_5;
+    volatile uint32_t gpio_6;
+    volatile uint32_t gpio_7;
+    volatile uint32_t gpio_8;
+    volatile uint32_t gpio_9;
+    volatile uint32_t gpio_10;
+    volatile uint32_t gpio_11;
+    volatile uint32_t gpio_12;
+    volatile uint32_t gpio_13;
+    volatile uint32_t gpio_14;
+    volatile uint32_t gpio_15;
+    volatile uint32_t gpio_16;
+    volatile uint32_t gpio_17;
+    volatile uint32_t gpio_18;
+    volatile uint32_t gpio_19;
+    volatile uint32_t gpio_20;
+    volatile uint32_t gpio_21;
+} io_mux_reg_t;
 
-//Pointer
-#define IO_MUX (*(volatile io_mux_dev_t *)DR_REG_IO_MUX_BASE)
+/* --------------------------------------------------------------------------  
+ *        BASE ADDRESS
+ * -------------------------------------------------------------------------- */
 
-//GPIO BASE ADDRESS
-#define DR_REG_GPIO_BASE 0x60004000
+#define IO_MUX_BASE_ADDRESS 0x60009000
+#define IO_MUX (*(volatile io_mux_reg_t *)IO_MUX_BASE_ADDRESS)
 
-// Offset 0x0010 + (n_gpio * 4)
-#define GPIO_FUNC_OUT_SEL_21_REG (*(volatile uint32_t*)(DR_REG_GPIO_BASE + 0x0010 + 21 * 4))
-// Offset 0x0054 + (index_sig * 4)
-#define GPIO_FUNC_IN_SEL_U0RX_REG (*(volatile uint32_t*)(DR_REG_GPIO_BASE + 0x0054 + 6 * 4))
 
+/* --------------------------------------------------------------------------  
+ *        CONFIGURATION BITS
+ * -------------------------------------------------------------------------- */
+
+/* --- IO_MUX_GPIO20_REG  ---*/
+#define IO_MUX_GPIO20_MCU_SEL                        12
+#define IO_MUX_GPIO20_FUN_IE                         9
+#define IO_MUX_GPIO20_FUN_IE                         9
+
+/* --- IO_MUX_GPIO21_REG ---*/
+#define IO_MUX_GPIO21_MCU_SEL                        12
 

@@ -1,4 +1,9 @@
 #include <stdint.h>
+#include <utils.h>
+
+/* --------------------------------------------------------------------------
+ *   UART CONFIGURATION INPUT STRUCTS
+ * -------------------------------------------------------------------------- */
 
 typedef enum{
     UART_0 = 0,
@@ -24,6 +29,10 @@ typedef struct{
     uint32_t integral;
     uint32_t frag;    
 }divisor_t;
+
+/* --------------------------------------------------------------------------
+ *   UART SPECIFIC CONFIGURATIONN REGISTERS
+ * -------------------------------------------------------------------------- */
 
 /**
  * @brief UART Register Structure for ESP32-C3
@@ -66,10 +75,50 @@ typedef struct {
     volatile uint32_t uart_id;             // 0x0080: Async FIFO status register
 } uart_reg_t;
 
-#define SYSTEM_PERIP_CLK_EN0_REG (*(volatile uint32_t*)(0x600C0000 + 0x0010))
-#define SYSTEM_PERIP_RST_EN0_REG (*(volatile uint32_t*)(0x600C0000 + 0x0018))
-#define UART_REG (*(volatile uart_reg_t*)( 0x60000000 ))
+/* --------------------------------------------------------------------------
+ *   BASE CONFIGURATION REGISTERS
+ * -------------------------------------------------------------------------- */
 
+#define SYSTEM_PERIP_CLK_EN0_REG            REG(0x600C0000 + 0x0010)
+#define SYSTEM_PERIP_RST_EN0_REG            REG(0x600C0000 + 0x0018)
+#define UART_BASE_ADDRESS                   0x60000000
+#define UART_REG                            (*(volatile uart_reg_t *)UART_BASE_ADDRESS)
+
+/* --------------------------------------------------------------------------
+ *   CONFIGURATION BITS
+ * -------------------------------------------------------------------------- */
+
+/* --- SYSTEM_PERIP_RST_EN0_REG - SYSTEM_PERIP_CLK_EN0_REG --- */
+#define SYSTEM_UART0_CLK_EN_RST             2
+#define SYSTEM_UART1_CLK_EN_RST             5
+#define SYSTEM_UART_MEM_CLK_EN              24
+
+/* --- UART_CLK_CONF_REG ---*/
+#define UART_RST_CORE                       23
+#define UART_SCLK_SEL                       20
+#define UART_SCLK_EN                        22
+
+/* --- UART_ID_REG ---*/
+#define UART_REG_CTRL                       30
+#define UART_REG_UPDATE                     31
+
+/*--- UART_CLKDIV_REG ---*/
+#define UART_CLKDIV_FRAG                    20
+
+/*--- UART_CONF0_REG ---*/
+#define UART_PARITY                         0
+#define UART_PARITY_EN                      1
+#define UART_BIT_NUM                        2
+#define UART_STOP_BIT_NUM                   4
+#define UART_RXFIFO_RST                     17
+#define UART_TXFIFO_RST                     18
+
+/*--- UART_CONF1_REG  ---*/
+#define  UART_RXFIFO_FULL_THRHD             0
+
+/* --------------------------------------------------------------------------
+ *   BASE FUNCTIONS
+ * -------------------------------------------------------------------------- */
 
 void hal_uart_init(uart_config_t *config);
 void hal_gpio_uart_setup(void);
