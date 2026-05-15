@@ -17,8 +17,8 @@ FREERTOS_DIR     = ./FreeRTOS-Kernel
 FREERTOS_PORT    = ./bare_metal_port
 FREERTOS_MEMMANG = $(FREERTOS_DIR)/portable/MemMang
 BUILD			 = ./build
-UART_DRIVER      = ./uart
-MDK              = ./mdk
+DRIVERS      	 = ./drivers
+BSP              = ./bsp
 COMMON			 = ./common
 
 # Target
@@ -27,14 +27,14 @@ TARGET_ELF      = $(BUILD)/$(TARGET).elf
 TARGET_BIN      = $(BUILD)/$(TARGET).bin
 
 # Headers
-INC_DIRS += -I. -I$(FREERTOS_DIR)/include -I$(FREERTOS_PORT) -I$(UART_DRIVER) -I$(MDK) -I$(COMMON)
+INC_DIRS += -I. -I$(FREERTOS_DIR)/include -I$(FREERTOS_PORT) -I$(DRIVERS) -I$(BSP) -I$(COMMON)
 
 # Sources
-SRCS += $(MDK)/boot.c 
+SRCS += $(BSP)/boot.c 
 SRCS += $(FREERTOS_DIR)/tasks.c $(FREERTOS_DIR)/list.c $(FREERTOS_DIR)/queue.c \
         $(FREERTOS_DIR)/timers.c $(FREERTOS_DIR)/event_groups.c \
         $(FREERTOS_DIR)/stream_buffer.c $(FREERTOS_DIR)/croutine.c
-SRCS += $(UART_DRIVER)/uart_hal.c
+SRCS += $(DRIVERS)/uart/uart_hal.c
 SRCS += $(FREERTOS_PORT)/port.c $(FREERTOS_PORT)/port_systimer.c
 SRCS += $(FREERTOS_MEMMANG)/heap_4.c
 SRCS += main.c
@@ -48,7 +48,7 @@ CFLAGS += -msmall-data-limit=8 -fno-common
 CFLAGS += -Wall $(INC_DIRS)
 
 # Linker options
-LDFLAGS = -T $(MDK)/linker_mdk.ld \
+LDFLAGS = -T $(BSP)/linker_mdk.ld \
           -Wl,-Map=output.map \
           -Wl,--gc-sections \
           -nostartfiles \

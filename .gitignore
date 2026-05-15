@@ -1,0 +1,7 @@
+#DIRS
+venv_esptool/
+build/
+
+#FILE
+*.map
+
